@@ -236,6 +236,9 @@
     .intro{
         width: 90%;
     }
+    .intro h1{
+        font-size: 50px;
+    }
     .post-preview{
         width: 90%;
     }
