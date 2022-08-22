@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Page head section-->
+<%- include('layouts/header'); -%>
+
+<body>
+    
+    <!--Page Header-->
+    <%- include('layouts/navbar'); -%>
+    
+    
+
+    <div class="spacer"> </div>
+
+    <div class="intro">
+        <h1> Damera Creatives</h1>
+        <p> Here at Damera Creatives, I strive to bring your ideas into realities. I help clients express their brand message in a way that resonates with their customers, through Brand Identity, Websites, and Print designs.</p>
+
+    </div>
+
+    
+     <div class="quote_holder">
+        <h2 id="header"></h2>
+        <p id="quote"></p> 
+     
+    </div>
+        
+ 
+    <div class="spacer2"> </div>
+
+
+    <!--Page footer-->
+    <%- include('layouts/footer'); -%>
+
+    <div class="contact_formIntro">
+        <h2> Send a quick message </h2>
+       
+    </div>
+
+    <form action="/messages/send" method="POST" id="contact_form">
+        <div class="contact_formPart">
+            <label for="guest">Enter your name</label> <br>
+            <input type="text" name="guest" class="inpt" id="name"placeholder="Sam Cook" >
+            <span>*</span>
+        </div>
+
+        <div class="contact_formPart">
+            <label for="email">Email</label> <br>
+            <input type="text" name="email" class="inpt" id="email" placeholder="samcook@me.com" >
+            <span>*</span>
+        </div>
+
+        <div class="contact_formPart">
+            <label for="description">Brief message </label> <br>
+            <textarea name="description" id="desc" class="desc" style="height: 12rem; width: 100%; " ></textarea>
+            <span>*</span>
+
+        </div>
+            
+        <div class="contact_formPart">
+            <button  id="submit" type="submit" class="btn"> SEND </button>
+        </div>
+
+        <div class="contact_formPart">
+            <div id="contact_formResponse">
+
+            </div>
+
+        </div>
+
+    </form>
+
+    <p class="copy">Copyright &copy; Damera Creatives 2022 - present </p>
+
+    <!--Page Scripts-->
+    <%- include('layouts/scripts'); -%>
+   
+   
+</body>
+</html>

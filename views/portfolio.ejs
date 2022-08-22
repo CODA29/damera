@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Page head section-->
+<%- include('layouts/header'); -%>
+
+<body>
+
+    <!--Page Header-->
+    <%- include('layouts/navbar'); -%>
+    
+    
+
+    <div class="spacer"> </div>
+
+    <div class="intro">
+        <h1> Some of my works </h1>
+        <p> A glimpse into some of the photography and logo projects I have done in the past...  </p>
+
+    </div>
+
+    <div class="container2">
+        <div class="child1">
+
+        <p>Photography:</p>
+        <div class="slideshow-container">
+            <div class="mySlides1 fade">
+                <img src="./img/photo1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1 fade">
+                <img src="./img/photo2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1 fade">
+                <img src="./img/photo3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1 fade">
+                <img src="./img/photo4.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        
+        </div>
+
+
+        </div>
+        
+        <div class="child2">
+        <p>Logos:</p>
+        <div class="slideshow-container">
+            <div class="mySlides2 fade">
+                <img src="./img/logo3.png" style="width:100%">
+              
+            </div>
+
+            <div class="mySlides2 fade">
+                <img src="./img/logo2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides2 fade">
+                <img src="./img/logo4.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+
+        </div>
+        
+
+    </div>
+    
+
+    <div class="spacer2"> </div>
+
+    <!--Page footer-->
+    <%- include('layouts/footer'); -%>
+
+    <p class="copy">Copyright &copy; Damera Creatives 2022 - present </p>
+
+    <!--Page Scripts-->
+    <%- include('layouts/scripts'); -%>
+
+    
+    
+</body>
+</html>

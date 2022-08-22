@@ -1,0 +1,36 @@
+<div class="header">
+        
+        
+
+    <div class="container">
+        <img class="icon">
+        <p class="weather"></p> 
+        <p class="temp"></p>
+
+    </div>
+
+    <div class="div1">
+        <p> <a href="/"> <img src="/img/mainLogo.png" alt="logo"> </a> </p>
+    </div>
+
+    <div class="div2">
+        <ul>
+            <li> <a href="/"> Home </a></li>
+            <li> <a href="/portfolio"> Portfolio </a></li>
+            <li> <a href="/blog"> ስነ-ፅሁፍ [ Literature ] </a></li>
+            <% if(loggedIn) { %> 
+                <li> <a href="/auth/logout"> Log Out </a></li>
+                <% } %>
+            <% if(!loggedIn) { %>
+                <li> <a href="/auth/register"> Join </a></li>
+            <% } %>
+                
+            
+            
+        </ul>
+
+    </div>
+
+ 
+    
+</div>

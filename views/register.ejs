@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Page head section-->
+<%- include('layouts/header'); -%>
+
+<body>
+    
+    <!--Page Header-->
+   
+
+    <div class="signUp_logo">
+        <a href="/"><img src="/img/mainLogo2.png" alt="logo"></a> 
+    </div>
+
+    
+    <div class="intro">
+        <h2> JOIN </h2>
+
+    </div>
+
+    <div class="formPart">
+
+        <% if(errors != null && errors.length > 0) { %>  
+
+            <ul class="error_disp">
+                <% for (var i = 0; i < errors.length; i++){ %> 
+                    <li> <%= errors[i] %> </li>
+                    <%} %>
+            </ul>
+    
+    
+            <%} 
+        %>
+        
+    </div>
+    
+    
+    <form action="/users/register" class="form" id="form" method="POST" enctype="multipart/form-data" >
+
+    
+        <div class="formPart">
+            <label for="username"> Username </label> <br>
+            <input type="text" name="username" class="inpt" id="username" value="<%=username %>" placeholder="Create a username">
+            <span>*</span>
+        </div>
+
+        <div class="formPart">
+            <label for="password">Password</label> <br>
+            <input type="text" name="password" class="inpt" id="password" value="<%= password %>" placeholder="Create a password">
+            <span>*</span>
+        </div>
+
+        <div class="formPart">
+            <button  id="submit" type="submit" class="btn"> JOIN </button>
+        </div>
+
+        <div class="formPart">
+            <div id="response">
+
+            </div>
+
+        </div>
+
+    </form>
+
+    <div class="spacer2"> </div>
+
+    <!--Page footer-->
+    <%- include('layouts/footer'); -%>
+
+    <p class="copy">Copyright &copy; Damera Creatives 2022 - present </p>
+
+    <!--Page Scripts-->
+    <%- include('layouts/scripts'); -%>
+
+    
+
+</body>
+</html>

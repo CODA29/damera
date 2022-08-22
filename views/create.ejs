@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Page head section-->
+<%- include('layouts/header'); -%>
+
+<body>
+    
+    <!--Page Header-->
+    <%- include('layouts/navbar'); -%>
+    
+
+    <div class="spacer"> </div>
+
+    <div class="intro">
+        <h1> What's on your mind? </h1>
+        <p> Your post might impact someone's life in a good way... </p>
+
+    </div>
+
+    
+    <form action="/posts/store"  id="form" method="POST" enctype="multipart/form-data">
+
+        
+
+        <div class="formPart">
+            <label for="title">Title</label> <br>
+            <input type="text" name="title" class="inpt" id="title" placeholder="Your title">
+            <span>*</span>
+        </div>
+
+        
+        <div class="formPart">
+            <label for="body"> Share your thoughts </label> <br>
+            <textarea name="body" id="body" class="desc" style="height: 12rem; width: 100%" placeholder="Write your post" ></textarea>
+            <span>*</span>
+
+        </div>
+
+        <div class="formPart">
+            <label for="image">Image</label> <br>
+            <input type="file" name="image" class="inpt" id="image">
+            
+        </div>
+
+            
+        <div class="formPart">
+            <button  id="submit" type="submit" class="btn"> POST </button>
+        </div>
+
+        <div class="formPart">
+            <div id="response">
+
+            </div>
+
+        </div>
+
+    </form>
+
+    <div class="spacer2"> </div>
+
+    <!--Page footer-->
+    <%- include('layouts/footer'); -%>
+
+    <p class="copy">Copyright &copy; Damera Creatives 2022 - present </p>
+
+    <!--Page Scripts-->
+    <%- include('layouts/scripts'); -%>
+
+
+
+    <script>
+        $('#body').summernote({
+          placeholder: 'Share your thoughts...',
+          tabsize: 2,
+          height: 120,
+          toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+          ]
+        });
+      </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+.signUp_logo{
+    width: 13%;
+    margin: auto;
+    margin-bottom: 60px;
+
+    
+}
+.signUp_logo img{
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 40px;
+    
+}
+@media screen and (max-width: 550px){
+    .signUp_logo{
+        width: 30%;
+    }
+}
+.error_disp{
+    list-style: none;
+    background-color: #533f12;
+    padding: 7px;
+    
+}
+.error_disp li{
+    padding: 5px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+}

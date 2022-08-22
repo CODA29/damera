@@ -1,0 +1,38 @@
+.quote_holder{
+    width: 50%;
+    margin: auto;
+    align-content: center;
+    margin-top: 50px;
+    
+}
+.quote_holder p{
+    text-align: center;
+    font-size: .9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    line-height: 1.8;
+}
+
+.quote_holder #header{
+    color: #044943;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+.quote_holder span{
+    color: #a05b22;
+}
+@media screen and (max-width: 800px) {
+    .quote_holder{
+        width: 80%;
+        padding-left: 20px;
+        
+        
+       
+    }
+    .quote_holder p{
+        text-align: left;
+        
+    }
+
+}
