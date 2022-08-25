@@ -5,7 +5,7 @@
 }
 .header{
     height: 180px;
-
+    
 }
 
 .header p{
@@ -20,6 +20,8 @@
 .div1 img{
     
     border-radius: 50%;
+    margin: 3.5%;
+    box-shadow: -3px -10px 40px rgb(255, 255, 255);
  
 }
 
@@ -86,7 +88,7 @@
 .spacer{
     width: 100%;
     height: 20vh;
-    background-color: #533f12;
+    background-color: #0b95ae;
     margin-top: 50px;
      
    
@@ -96,7 +98,7 @@
 .intro{
     width: 80%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 100px;
     border-bottom: 2px inset #8080808c;
     padding: 10px;
     border-radius: 10px;
@@ -106,8 +108,8 @@
 .intro h1{
    
     text-align: center;
-    font-size: 120px;
-    color: #044943 ;
+    font-size: 100px;
+    color: #0b95ae ;
     
 }
 .intro h2{
@@ -236,9 +238,6 @@
     .intro{
         width: 90%;
     }
-    .intro h1{
-        font-size: 50px;
-    }
     .post-preview{
         width: 90%;
     }
@@ -250,7 +249,7 @@
         width: 100%;
         padding: 20px 10px;
         background-color: #6d6d6d;
-        top: 130px; 
+        top: 160px; 
       
     }
     .div2 a{
