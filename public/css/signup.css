@@ -1,11 +1,12 @@
 
 .signUp_logo{
-    width: 13%;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    width: 18%;
 
     
 }
+
 .signUp_logo img{
     width: 100%;
     border-radius: 50%;
@@ -14,12 +15,12 @@
 }
 @media screen and (max-width: 550px){
     .signUp_logo{
-        width: 30%;
+        width: 50%;
     }
 }
 .error_disp{
     list-style: none;
-    background-color: #533f12;
+    background-color: #3e502a;
     padding: 7px;
     
 }
