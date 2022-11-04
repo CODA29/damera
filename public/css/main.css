@@ -18,13 +18,17 @@
 }
 .div{
     width: 50%;
+    margin: auto;
+    
     
 }
 .div1 img{
     
     border-radius: 50% ;
     margin: 3.5%;
-    box-shadow: -5px -20px 50px #ffffff;
+    margin-top: 60px;
+   
+   
  
 }
 
@@ -60,15 +64,19 @@
 
 .div2{
    position: absolute;
-   top: 170px; 
-   margin-top: 40px; 
+   top: 10px; 
+   margin-top: 20px; 
    width: 100%;
-  
+   
     
 }
 .div2 ul{
     list-style: none;
     padding: 0;
+    float: right;
+   
+  
+  
     
  
 }
@@ -77,6 +85,7 @@
     font-size: 22px;
     display: inline-block;
     padding-right: 15px;
+   
  
 }
 .div2 a{
@@ -91,8 +100,7 @@
 .spacer{
     width: 100%;
     height: 20vh;
-    background-color: #3e502a;
-    margin-top: 80px;
+    margin-top: 50px;
      
    
 }
@@ -266,7 +274,12 @@
         padding: 20px 10px;
         background-color: #6d6d6d;
         top:200px; 
+        margin-top: 60px;
       
+    }
+    .div2 ul{
+        float: none;
+       
     }
     .div2 a{
         color: white;
@@ -277,6 +290,7 @@
     .div2 li{
         padding-right: 10px;
         font-size: 15px;
+        
         
     }
     .header p img{
