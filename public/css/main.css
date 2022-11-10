@@ -283,7 +283,8 @@
       
     }
     .div2 ul{
-        float: none;
+        width: 100%;
+        margin: auto;
        
     }
     .div2 a{
