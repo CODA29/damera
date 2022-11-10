@@ -110,6 +110,7 @@
     border-bottom: 2px inset #8080808c;
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 40px;
    
    
 }
@@ -118,6 +119,7 @@
     text-align: center;
     font-size: 50px;
     color: #3e502a;
+    margin-top: 50px;
     
 }
 .intro h2{
@@ -255,6 +257,12 @@
     .spacer{
         margin-top: 60px;
     }
+    .intro h1{
+        font-size: 35px;
+    }
+    .intro p{
+        font-size: 18px;
+    }
     .intro{
         width: 90%;
         position: relative;
@@ -264,12 +272,14 @@
     .post-preview{
         width: 90%;
     }
+    .post-preview h2{
+        font-size: 25px;
+    }
     .div2{
         width: 100%;
         padding: 20px 10px;
         background-color: #6d6d6d;
-        top:250px; 
-        margin-top: 60px;
+        top:310px; 
       
     }
     .div2 ul{
@@ -307,7 +317,7 @@
      
     }
     .contribute {
-        margin-top: 70px;
+        margin-top: 100px;
     }
     .contribute a{
         font-size: 15px;
