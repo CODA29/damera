@@ -266,7 +266,7 @@
     }
     .div2{
         width: 100%;
-        padding: 20px 5px;
+        padding: 20px 10px;
         background-color: #6d6d6d;
         top:250px; 
         margin-top: 60px;
@@ -283,10 +283,9 @@
         color: #adc096;
     }
     .div2 li{
-        padding-right: 10px;
+        padding-right: 5px;
         font-size: 15px;
-        
-        
+      
     }
     .header p img{
         width: 34%;
