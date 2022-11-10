@@ -64,8 +64,7 @@
 
 .div2{
    position: absolute;
-   top: 10px; 
-   margin-top: 20px; 
+   top: 20px;  
    width: 100%;
    
     
@@ -100,6 +99,7 @@
 .spacer{
     width: 100%;
     height: 10vh;
+    margin-top: 150px;
 }
 
 
@@ -126,7 +126,7 @@
     color: #3e502a;
 }
 .intro p{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.8;
     text-align: center;
@@ -137,33 +137,40 @@
 }
 
 .spacer2{
-    width: 100%;
+   
     border-top: 1px outset #8080808c;
-    margin-top: 50px;
+    margin: 100px 0px;
+ 
 }
 
 /* Controller for the social media icons */
 .social{
-    
-    width: 10.8%;
+
+    width: 500px;
     margin: auto;
     margin-top: 30px;
-    
+ 
+}
 
+#social_child{
+    width: 250px;
+    margin: auto;
 }
 .social ul{
+    width: 50%;
     padding: 0;
+    margin: auto;
+    
 }
 
 .social ul li{
+   
     list-style: none;
     display: inline-block;
-   
-   
-   
+
 }
 .social button{
-    background-color: #00808000;
+    background-color: unset;
     cursor: pointer;
     border: none;
     
@@ -171,7 +178,7 @@
 
 .fab {
     
-    font-size: 40px;
+    font-size: 30px;
     color: #3e502a;
     padding: 7px;
     
@@ -181,7 +188,7 @@
 .copy{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(143, 143, 143);
+    color: #8f8f8f;
     padding-top: 20px;
     margin-bottom: 100px;
     font-size: 20px;
@@ -250,30 +257,24 @@
     font-size: 20px;
     
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 900px){
     .spacer{
         margin-top: 60px;
     }
     .intro{
         width: 90%;
-        margin: 20px;
+        position: relative;
+        top: 20px
     }
-    .intro p{
-        margin: 0;
-        font-size: 20px;
-    }
+    
     .post-preview{
         width: 90%;
-    }
-    .social{
-    
-        width: 27%;
     }
     .div2{
         width: 100%;
         padding: 20px 10px;
         background-color: #6d6d6d;
-        top:200px; 
+        top:250px; 
         margin-top: 60px;
       
     }

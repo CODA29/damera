@@ -4,7 +4,7 @@
 
 }
 .contact_formPart{
-     width: 30%;
+     width: 20%;
      margin: auto;
      margin-top: 10px;
 
@@ -22,7 +22,7 @@
 .contact_formIntro h2{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 50px;
+    margin-bottom: 50px;
     color: #2a5214;
 }
 .inpt{
