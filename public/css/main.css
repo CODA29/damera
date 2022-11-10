@@ -146,21 +146,15 @@
 /* Controller for the social media icons */
 .social{
 
-    width: 500px;
+    width: 300px;
     margin: auto;
     margin-top: 30px;
  
 }
 
 #social_child{
-    width: 250px;
+    width: 150px;
     margin: auto;
-}
-.social ul{
-    width: 50%;
-    padding: 0;
-    margin: auto;
-    
 }
 
 .social ul li{
@@ -272,7 +266,7 @@
     }
     .div2{
         width: 100%;
-        padding: 20px 10px;
+        padding: 20px 5px;
         background-color: #6d6d6d;
         top:250px; 
         margin-top: 60px;
