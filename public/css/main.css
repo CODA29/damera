@@ -4,31 +4,32 @@
     box-sizing: border-box;
 }
 .header{
-    height: 180px;
+    height: 160px;
     
 }
 
 .header p{
     text-align: center;
+   
 }
 
 .header p img{
     width: 20%;
 
 }
-.div{
-    width: 50%;
+.div1 {
+    width: 100%;
     margin: auto;
-    
-    
+    position: absolute;
+    top: 100px;
+
+  
 }
 .div1 img{
     
     border-radius: 50% ;
     margin: 3.5%;
     margin-top: 60px;
-   
-   
  
 }
 
@@ -37,6 +38,7 @@
     top: 0;
     left: 24px;
     margin-right: 20px;
+    z-index: 1;
 }
 .icon{
     width: 40px;
@@ -64,8 +66,11 @@
 
 .div2{
    position: absolute;
-   top: 20px;  
+   top: 0.1px;  
    width: 100%;
+   padding: 40px ;
+   background-color: #f7f6f6;
+  
    
     
 }
@@ -73,6 +78,8 @@
     list-style: none;
     padding: 0;
     float: right;
+    position: relative;
+    top: 19px;
    
   
   
@@ -81,7 +88,7 @@
 }
 .div2 li{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     display: inline-block;
     padding-right: 15px;
    
@@ -141,7 +148,9 @@
 .spacer2{
    
     border-top: 1px outset #8080808c;
-    margin: 100px 0px;
+    margin-top: 100px;
+    padding: 60px;
+    background-color: #f7f6f6;
  
 }
 
@@ -174,7 +183,7 @@
 
 .fab {
     
-    font-size: 30px;
+    font-size: 25px;
     color: #3e502a;
     padding: 7px;
     
@@ -186,8 +195,8 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #8f8f8f;
     padding-top: 20px;
-    margin-bottom: 100px;
-    font-size: 20px;
+    margin-bottom: 15px;
+    font-size: 17px;
 }
 
 /* Controller for the Literature page */
@@ -212,6 +221,7 @@
     margin-top: 20px;
 }
 .post-preview p{
+
     font-size: 20px;
     color: #424242;
     line-height: 1.9;
@@ -219,15 +229,16 @@
     padding-bottom: 15px;
     word-spacing: 0.6pt;
     text-align: center;
-    
-    
-    
+ 
 }
+
 .post-preview img{
+
     width: 100%;
     margin-bottom: 10px;
     
 }
+
 .post-preview span{
     
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -253,7 +264,7 @@
     font-size: 20px;
     
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 750px){
     .spacer{
         margin-top: 60px;
     }
@@ -275,16 +286,21 @@
     .post-preview h2{
         font-size: 25px;
     }
+    .div1 {
+        position: absolute;
+        top: 30px;
+    }
     .div2{
         width: 100%;
         padding: 20px 10px;
         background-color: #6d6d6d;
-        top:310px; 
+        top:320px; 
       
     }
     .div2 ul{
         width: 100%;
         margin: auto;
+        position: unset;
        
     }
     .div2 a{
