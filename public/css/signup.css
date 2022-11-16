@@ -1,5 +1,9 @@
-
+body{
+    padding: 0;
+    margin: 0;
+}
 .signUp_logo{
+
     margin: auto;
     margin-bottom: 40px;
     width: 18%;
@@ -15,7 +19,7 @@
 }
 @media screen and (max-width: 550px){
     .signUp_logo{
-        width: 50%;
+        width: 100%;
     }
 }
 .error_disp{
