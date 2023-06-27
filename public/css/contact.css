@@ -4,7 +4,7 @@
 
 }
 .contact_formPart{
-     width: 25%;
+     width: 40%;
      margin: auto;
      margin-top: 10px;
 
@@ -13,17 +13,14 @@
 .contact_form label{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    
 
-    
-    
     
 }
 .contact_formIntro h2{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 50px;
-    color: #2a5214;
+    color: #93c896;
 }
 .inpt{
      
@@ -49,7 +46,7 @@
 
 }
 .contact_formPart > span {
-	color: #4d632d;
+	color: #93c896;
     margin-left: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
@@ -63,13 +60,13 @@
     margin-bottom: 50px;
 }
 #contact_formResponse p{
-    background-color: #4d632d;
+    background-color: #93c896;
     color: white;
     padding: 20px 20px;
 
 }
 @media screen and (max-width: 800px) {
     .contact_formPart{
-        width: 70%;
+        width: 90%;
     }
 }

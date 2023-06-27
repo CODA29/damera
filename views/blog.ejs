@@ -16,7 +16,7 @@
 
     <div class="intro">
         <h1> Feeds for the mind... </h1>
-        <p>  የአዕምሮ ማዕድ  </p>
+        <p>  Unleash your imagination and let Damera be the canvas for your creative endeavors! </p>
 
     </div>
 
@@ -25,17 +25,19 @@
     <% for (var i = 0; i < blogposts.length; i++) { %> 
         
         <div class="post-preview">
-           
-            <img src=" <%= blogposts[i].image %> " alt=""> <br>
-            <span> ተፃፈ 📝  በ  <%=blogposts[i].userid.username %> 
+            <div>
+                <img src=" <%= blogposts[i].image %> " alt=""> <br>
+            <span> By:  <%=blogposts[i].userid.username %> 
                 - <%=blogposts[i].datePosted.toDateString() %>
             </span>
 
-            <h2 class="post-title"><%= blogposts[i].title %></h2> 
+            </div>
+            <div>
+                <h2 class="post-title"><%= blogposts[i].title %></h2> 
             <p class="post-subtitle"><%- blogposts[i].body %></p>
-           
-            
-            
+
+            </div>
+
         </div>
 
     <% } %> 
@@ -50,7 +52,7 @@
     <!--Page footer-->
     <%- include('layouts/footer'); -%>
 
-    <p class="copy"> Copyright &copy; 2022, Damera Creatives. </p>
+    <p class="copy"> Damera Creatives &copy; 2022 &nbsp;&nbsp; Website by Dagmawi Megra </p>
     <!--Page Scripts-->
     <%- include('layouts/scripts'); -%>
     </div>

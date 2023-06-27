@@ -41,7 +41,7 @@ label{
 
 }
 .formPart > span {
-	color: #4d632d;
+	color: #93c896;
     margin-left: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
@@ -55,7 +55,7 @@ label{
     margin-bottom: 50px;
 }
 #response p{
-    background-color: #4d632d;
+    background-color: #93c896;
     color: white;
     padding: 20px 20px;
 
