@@ -6,5 +6,8 @@ const MessageSchema = new Schema({
     description: String
    
 });
+const successMessage = {
+    message:'successfully sent'
+}
 const Message = mongoose.model('Message', MessageSchema);
 module.exports = Message
