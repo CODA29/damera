@@ -289,13 +289,13 @@
 @media screen and (max-width: 750px){
     .spacer{
 
-        margin-top: 60px;
+        margin-top: 2.5rem;
 
     }
     .intro h1{
 
         font-size: 30px;
-        margin-top: 5rem;
+        margin-top: 3rem;
 
     }
     .intro p{
@@ -309,7 +309,7 @@
     }
     .intro{
 
-        width: 90%;
+        width: 100%;
         position: relative;
         top: 20px
 
@@ -320,6 +320,7 @@
         width: 90%;
         display: flex;
         flex-direction: column;
+        margin-top: 4rem;
 
     }
     .post-preview h2{

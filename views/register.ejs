@@ -9,7 +9,8 @@
     <%- include('layouts/navbar'); -%>
    
 
-    
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
     
     <div class="intro">
         <h2> JOIN </h2>
@@ -28,14 +29,20 @@
     
     
             <%} 
-        %>
+            
+        %> 
+        
         
     </div>
     
     
     <form action="/users/register" class="form" id="form" method="POST" enctype="multipart/form-data" >
 
-    
+        <div class="formPart">
+            <label for="name"> Name </label> <br>
+            <input type="text" name="name" class="inpt" id="name" value="<%=name %>" placeholder="Enter your name">
+            <span>*</span>
+        </div>
         <div class="formPart">
             <label for="username"> Username </label> <br>
             <input type="text" name="username" class="inpt" id="username" value="<%=username %>" placeholder="Create a username">

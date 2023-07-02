@@ -9,7 +9,11 @@ module.exports = (req,res) => {
             //req.session.validationErrors = validationErrors
             req.flash('data', req.body)
             return res.redirect('/auth/register')
+        }else{
+            
+           res.redirect('/blog')
+           
         }
-        res.redirect('/')
+        
     })
 }
