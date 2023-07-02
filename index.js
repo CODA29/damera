@@ -20,6 +20,7 @@ const expressSession = require('express-session')
 const redirectIfAuthenticatedMiddleware = require('./views/middleware/redirectIfAuthenticatedMiddleware')
 const logoutController = require('./controllers/logout')
 const flash = require('connect-flash');
+const dotenv = require('dotenv').config()
 app.set('view engine','ejs')
 global.loggedIn = null;
 app.use(express.static('public'))
@@ -36,9 +37,9 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(flash());
 mongoose.connect('mongodb+srv://mickysemu18:Hebist18@cluster0.s4vx6.mongodb.net/damera_database?retryWrites=true&w=majority', {useNewUrlParser: true })
-let port = process.env.PORT;
+let port = dotenv.PORT;
 if (port == null || port == ""){
-    port = 8000;
+    port = 3000;
 }
 app.listen(port, ()=>{
   console.log('App listening... ') 
