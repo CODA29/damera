@@ -24,7 +24,7 @@
 .div1 img{
   
     margin-top: 60px;
-    width: 20%;
+    width: 15rem;
     filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.502));
 }
 
@@ -357,25 +357,17 @@
     .div2 a{
 
         font-size: 25px;
+        padding: 0;
 
 
     }
     .div2 a:hover{
-
         color: #93c896;
-
     }
     .div2 li{
-
-        padding-right: 5px;
-        font-size: 15px;
-      
+        padding: 0;
     }
-    .header p img{
-
-        width: 34%;   
     
-    }
     .weather{
     
         font-size: 13px;
