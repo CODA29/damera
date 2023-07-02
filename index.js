@@ -43,9 +43,9 @@ if (port == null || port == ""){
 app.listen(port, ()=>{
   console.log('App listening... ') 
 }) 
-app.listen(4000, ()=>{
-    console.log('App listening...') 
-});
+//app.listen(4000, ()=>{
+   // console.log('App listening...') 
+//});
 app.post('/users/register', storeUserController)
 app.post('/messages/send', storeMessageController)
 app.get('/posts/new', newPostController)
