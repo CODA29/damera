@@ -38,13 +38,13 @@ app.use(flash());
 mongoose.connect('mongodb+srv://mickysemu18:Hebist18@cluster0.s4vx6.mongodb.net/damera_database?retryWrites=true&w=majority', {useNewUrlParser: true })
 let port = process.env.PORT;
 if (port == null || port == ""){
-    port = 3000;
+    port = 8000;
 }
 app.listen(port, ()=>{
   console.log('App listening... ') 
 }) 
 //app.listen(3000, ()=>{
-   // console.log('App listening on port 3000') 
+    //console.log('App listening on port 3000') 
 //});
 app.post('/users/register', storeUserController)
 app.post('/messages/send', storeMessageController)
