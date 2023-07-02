@@ -12,7 +12,7 @@
   },
   "name": "dameracreatives",
   "version": "1.0.0",
-  "description": "Personal Website",
+  "description": "Blog Website",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
