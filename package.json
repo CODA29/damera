@@ -10,7 +10,7 @@
     "mongoose": "^6.3.3",
     "mongoose-unique-validator": "^3.0.0"
   },
-  "name": "node.js_final",
+  "name": "dameracreatives",
   "version": "1.0.0",
   "description": "Personal Website",
   "main": "index.js",
