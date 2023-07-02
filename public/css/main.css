@@ -221,7 +221,7 @@
     background: none;
     position: fixed;
     bottom: 30px;
-    right: 3rem;
+    right: 1rem;
     font-size: .6rem;
     cursor: pointer;
     z-index: 99;
@@ -234,7 +234,7 @@
         --fa-bounce-land-scale-x: 1; 
         --fa-bounce-land-scale-y: 1; 
         --fa-bounce-rebound: 0;
-        color: green;
+        color: #93c896;
         
 }
    
@@ -431,8 +431,8 @@
     }
     #scrollBtn .fa-solid{
         
-        font-size: .5rem;
-        right: 1rem;
+        font-size: 2.3rem;
+        
         
     }
     

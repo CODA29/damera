@@ -6,7 +6,7 @@ window.onscroll = function(){
 };
 
 function scrollFunction(){
-    if(document.body.scrollBottom > 1000 || document.documentElement.scrollTop > 1000){
+    if(document.body.scrollBottom > 2000 || document.documentElement.scrollTop > 2000){
         btn.style.display = "block";
        
     }else{
