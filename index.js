@@ -38,7 +38,7 @@ app.use(flash());
 mongoose.connect('mongodb+srv://mickysemu18:Hebist18@cluster0.s4vx6.mongodb.net/damera_database?retryWrites=true&w=majority', {useNewUrlParser: true })
 let port = process.env.PORT;
 if (port == null || port == ""){
-    port = 3000;
+    port = 6000;
 }
 app.listen(port, ()=>{
   console.log('App listening... ')
