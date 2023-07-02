@@ -212,6 +212,35 @@
     font-size: 17px;
 }
 
+
+
+/* Scrollup button */
+#scrollBtn{ 
+    display: none;
+    border: none;
+    background: none;
+    position: fixed;
+    bottom: 30px;
+    right: 3rem;
+    font-size: .6rem;
+    cursor: pointer;
+    z-index: 99;
+}
+#scrollBtn .fa-solid{
+        --fa-bounce-start-scale-x: 1; 
+        --fa-bounce-start-scale-y: 1; 
+        --fa-bounce-jump-scale-x: 1; 
+        --fa-bounce-jump-scale-y: 1; 
+        --fa-bounce-land-scale-x: 1; 
+        --fa-bounce-land-scale-y: 1; 
+        --fa-bounce-rebound: 0;
+        color: green;
+        
+}
+   
+    
+
+
 /* Controller for the Literature page */
 .post-preview{
     width: 90%;
@@ -399,6 +428,12 @@
 
         font-size: 15px;
 
+    }
+    #scrollBtn .fa-solid{
+        
+        font-size: .5rem;
+        right: 1rem;
+        
     }
     
 }
