@@ -24,7 +24,7 @@
 
     <% for (var i = 0; i < blogposts.length; i++) { %> 
         
-        <div class="post-preview">
+        <div class="post-preview" data-aos="slide-up" data-aos-duration="1000">
             <div>
                 <img src=" <%= blogposts[i].image %> " alt=""> <br>
             <span> By:  <%=blogposts[i].userid.username %> 
@@ -52,7 +52,6 @@
     <!--Page footer-->
     <%- include('layouts/footer'); -%>
 
-    <p class="copy"> Damera Creatives &copy; 2022 &nbsp;&nbsp; Website by Dagmawi Megra </p>
     <!--Page Scripts-->
     <%- include('layouts/scripts'); -%>
     </div>
