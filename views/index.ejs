@@ -17,7 +17,7 @@
         <p> Welcome to Damera Creatives. Our platform is designed to nurture and showcase the incredible talents of artists, writers, and creators from all walks of life. We invite you to unleash your imagination, share your unique perspectives, and engage with a vibrant community of like-minded individuals who appreciate the power of creative expression.</p>
 
     </div>
-
+<!-- 
     <div class="intro_img" data-aos="slide-up" data-aos-duration="1000" >
         <img src="../img/dance3.png" alt="">
 
@@ -41,12 +41,39 @@
         <img src="../img/men3.png" alt="">
         
     </div>
-    <!-- <div class="quote_holder">
+    <div class="quote_holder">
         <h2 id="header"></h2>
         <p id="quote"></p> 
      
     </div>
     -->   
+    <div class="post-container">
+        <% for (var i = 0; i < blogposts.length; i++) { %> 
+            
+            <div class="post-preview" data-aos="slide-up" data-aos-duration="1000">
+                
+                    <div>
+                        <img src=" <%= blogposts[i].image %> " alt=""> <br>
+                        
+                    </div>
+                    <div>
+                        
+
+                        <h2 class="post-title"><%= blogposts[i].title %></h2> 
+                        <span> By:  <%=blogposts[i].userid.username %> 
+                            - <%=blogposts[i].datePosted.toDateString() %>
+                        </span>
+
+                        <br><br><br>
+                        
+                        <p><a href="/display/<%= blogposts[i]._id %>">Read Post</a></p>
+        
+                    </div>
+                    
+            </div>
+
+        <% } %> 
+    </div>
  
 <div class="spacer2"> 
 

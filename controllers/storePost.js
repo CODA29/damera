@@ -12,7 +12,7 @@ module.exports = (req,res)=>{
             userid: req.session.userId
         
         }); 
-        res.redirect('/blog');
+        res.redirect('/');
     })
 
 }

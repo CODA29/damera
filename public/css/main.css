@@ -242,22 +242,23 @@
 
 
 /* Controller for the Literature page */
-.post-preview{
-    width: 90%;
-    margin: auto;
+.post-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 5rem;
-    border-bottom: 2px inset #8080808c;
-    padding: 10px;
-    border-radius: 10px;
-    height: 70vh;
-    overflow: scroll;
-    background: #f7f6f6;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10rem;
+}
+.post-preview{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: .5rem;
+    
 }
 .post-preview a{
-    text-decoration: none;
+    
+    color: #af5b07;
     
 }
 .post-preview h2{
@@ -346,14 +347,14 @@
         top: 20px
 
     }
-    
-    .post-preview{
-
-        width: 90%;
+    .post-container{
         display: flex;
         flex-direction: column;
-        margin-top: 4rem;
+    }
+    .post-preview{
 
+        width: 100%;
+     
     }
     .post-preview h2{
 

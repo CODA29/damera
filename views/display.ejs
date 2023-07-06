@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!--Page head section-->
+    <%- include('layouts/header'); -%>
+<body>
+    <img src=" <%= blogpost.image %> " alt=""> <br>
+    <h2 class="post-title"><%= blogpost.title %></h2> 
+    <p class="post-subtitle"><%- blogpost.body %></p>
+    <span> By:  <%=blogpost.userid.username %> 
+         <%=blogpost.datePosted.toDateString() %>
+    </span>
+
+    <%- include('layouts/scripts'); -%>
+</body>
+</html>

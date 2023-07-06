@@ -10,7 +10,7 @@ const blogController = require('./controllers/blog')
 const storePostController = require('./controllers/storePost')
 const newUserController = require('./controllers/newUser')
 const homeController = require('./controllers/home')
-const aboutController = require('./controllers/about')
+const getPostController = require('./controllers/getPost')
 const portfolioController = require('./controllers/portfolio')
 const storeUserController = require('./controllers/storeUser')
 const storeMessageController = require('./controllers/storeMessage')
@@ -39,21 +39,21 @@ mongoose.connect('mongodb+srv://mickysemu18:Hebist18@cluster0.s4vx6.mongodb.net/
 let port = process.env.PORT;
 if (port == null || port == ""){
     port = 6000;
-}
+};
 app.listen(port, ()=>{
   console.log('App listening... ')
 }) 
-//app.listen(4000, ()=>{
-    //console.log('App listening...') 
-//})
+app.listen(4000, ()=>{
+    console.log('App listening...') 
+});
 app.post('/users/register', storeUserController)
 app.post('/messages/send', storeMessageController)
 app.get('/posts/new', newPostController)
 app.get('/', homeController)
-app.get('/about', aboutController)
 app.get('/portfolio', portfolioController)
 app.get('/blog', blogController)
 app.post('/posts/store', storePostController)
+app.get('/display/:id', getPostController)
 app.get('/auth/register', redirectIfAuthenticatedMiddleware, newUserController)
 app.get('/auth/login', loginController)
 app.post('/users/login',loginUserController)

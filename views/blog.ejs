@@ -21,27 +21,6 @@
     </div>
 
     
-
-    <% for (var i = 0; i < blogposts.length; i++) { %> 
-        
-        <div class="post-preview" data-aos="slide-up" data-aos-duration="1000">
-            <div>
-                <img src=" <%= blogposts[i].image %> " alt=""> <br>
-            <span> By:  <%=blogposts[i].userid.username %> 
-                - <%=blogposts[i].datePosted.toDateString() %>
-            </span>
-
-            </div>
-            <div>
-                <h2 class="post-title"><%= blogposts[i].title %></h2> 
-            <p class="post-subtitle"><%- blogposts[i].body %></p>
-
-            </div>
-
-        </div>
-
-    <% } %> 
-
     
 
     
