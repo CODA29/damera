@@ -13,6 +13,7 @@ body{
 }
 .signupMessage a{
     cursor: pointer;
+    color: #af5b07;
 }
 @media screen and (max-width: 800px) {
     .signupMessage{
