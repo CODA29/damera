@@ -3,12 +3,19 @@
      <!--Page head section-->
     <%- include('layouts/header'); -%>
 <body>
-    <img src=" <%= blogpost.image %> " alt=""> <br>
-    <h2 class="post-title"><%= blogpost.title %></h2> 
+    <div class="display-header" style="background: url('<%= blogpost.image %>'); background-size: cover;">
+        <div class="display-header sub">
+            <h1 class="post-title"><%= blogpost.title %></h1>
+            <span> By:  <%=blogpost.userid.username %> 
+                <%=blogpost.datePosted.toDateString() %>
+           </span> 
+        </div>
+        
+    </div>
+    
+    
     <p class="post-subtitle"><%- blogpost.body %></p>
-    <span> By:  <%=blogpost.userid.username %> 
-         <%=blogpost.datePosted.toDateString() %>
-    </span>
+    
 
     <%- include('layouts/scripts'); -%>
 </body>
