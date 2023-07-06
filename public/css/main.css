@@ -159,7 +159,7 @@
 }
 .spacer2{
    
-    border-top: 1px outset #8080808c;
+    border-top: .5px solid rgba(209, 209, 209, 0.331);
     margin-top: 100px;
     padding: 60px;
     background-color: #f7f6f6;
