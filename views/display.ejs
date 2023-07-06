@@ -3,7 +3,20 @@
      <!--Page head section-->
     <%- include('layouts/header'); -%>
 <body>
+    
     <div class="display-header" style="background: url('<%= blogpost.image %>'); background-size: cover;">
+        <div class="nav">
+            <div class="logo">
+                <a href="/"><img src="../img/TransparentDameraLogo.png" alt=""></a>
+            </div>
+            <div class="link">
+                <a href="/">Home</a>
+                <% if(loggedIn) { %> 
+                     <a href="/auth/logout"> Log Out </a>
+                    <% } 
+                %>
+            </div>
+        </div>
         <div class="display-header sub">
             <h1 class="post-title"><%= blogpost.title %></h1>
             <span> By:  <%=blogpost.userid.username %> 
@@ -13,8 +26,10 @@
         
     </div>
     
-    
-    <p class="post-subtitle"><%- blogpost.body %></p>
+    <div class="post-body">
+        <p><%- blogpost.body %></p>
+    </div>
+   
     
 
     <%- include('layouts/scripts'); -%>

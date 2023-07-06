@@ -88,7 +88,7 @@
 .div2 a{
 
     text-decoration: none;
-    color: #613203;
+    color: #af5b07;
     padding-left: 15px;
 
 }
@@ -348,14 +348,12 @@
 
     }
     .post-container{
+        width: 90%;
+        margin: auto;
         display: flex;
         flex-direction: column;
     }
-    .post-preview{
-
-        width: 100%;
-     
-    }
+    
     .post-preview h2{
 
         font-size: 25px;
