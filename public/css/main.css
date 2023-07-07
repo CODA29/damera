@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .header{
-    height: 80vh;
+    height: 100vh;
     background: url(../img/fire.jpg) no-repeat fixed;
     background-size: 100% 100%;
    
@@ -353,7 +353,7 @@
 }
 @media screen and (max-width: 750px){
     .header{
-        height: 80vh;
+        height: 100vh;
     }
     .container h2{
         font-size: 1.2em;
