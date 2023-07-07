@@ -5,8 +5,7 @@
 }
 .header{
     height: 60.2vh;
-    background: url(../img/leaf.jpg) no-repeat bottom fixed;
-    
+    background: rgb(47, 68, 47);
 }
 
 .header p{
