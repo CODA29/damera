@@ -5,7 +5,7 @@
 }
 .header{
     height: 70vh;
-    background: rgb(59, 96, 59);
+    background: url(../img/leaf.jpg) no-repeat bottom fixed;
     background-size: cover;
    
 }
@@ -160,8 +160,6 @@
     color: #454545;
     margin-top: 60px;
    
-
-
 }
 .intro_img{
     width: 50%;
@@ -370,6 +368,7 @@
     .intro p{
 
         font-size: 1rem;
+        width: 85%;
 
     }
     .intro_img{
