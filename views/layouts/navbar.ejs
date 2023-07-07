@@ -1,36 +1,38 @@
 <div class="header">
         
         
+    <div class="navWrap">
+        <div class="container">
+            <a href="/"><h2>DAMERA CREATIVES</h2></a> 
 
-    <div class="container">
-        <img class="icon">
-        <p class="weather"></p> 
-        <p class="temp"></p>
+        </div>
 
-    </div>
+        <div class="div1">
+            <p> <a href="/"> <img src="/img/TransparentDameraLogo.png" alt="logo"> </a> </p>
+        </div>
 
-    <div class="div1">
-        <p> <a href="/"> <img src="/img/TransparentDameraLogo.png" alt="logo"> </a> </p>
-    </div>
-
-    <div class="div2">
-        <ul>
-            <li> <a href="/"> HOME </a></li>
-            <!-- <li> <a href="/about"> About </a></li> -->
-            <!--<li> <a href="/portfolio"> Portfolio </a></li> -->
-            <li> <a href="/blog"> POST </a></li>
-            <% if(loggedIn) { %> 
-                <li> <a href="/auth/logout"> LOG OUT </a></li>
+        <div class="div2">
+            <ul>
+                <li> <a href="/"> HOME </a></li>
+                <!-- <li> <a href="/about"> About </a></li> -->
+                <!--<li> <a href="/portfolio"> Portfolio </a></li> -->
+                <li> <a href="/blog"> POST </a></li>
+                <% if(loggedIn) { %> 
+                    <li> <a href="/auth/logout"> LOG OUT </a></li>
+                    <% } %>
+                <% if(!loggedIn) { %>
+                <!-- <li> <a href="/auth/register"> Join </a></li> -->
                 <% } %>
-            <% if(!loggedIn) { %>
-               <!-- <li> <a href="/auth/register"> Join </a></li> -->
-            <% } %>
+                    
                 
-            
-            
-        </ul>
+                
+            </ul>
 
+        </div>
+
+        
     </div>
+        
 
  
     

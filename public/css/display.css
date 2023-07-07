@@ -2,17 +2,18 @@
     height: 70vh;
     background-size: cover;
     overflow: hidden;
-    
 }
+
 .nav{
-    background: rgba(24, 24, 24, 0.502);
+    background-color: rgba(24, 24, 24, 0.613);
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem
+    padding: 2rem;
 }
+
 .logo{
     width: 90px;
     display: flex;
@@ -24,7 +25,6 @@
 }
 .logo img{
     width: 100%;
-   
 }
 .link{
     display: inline-block;
@@ -37,8 +37,11 @@
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.link a:hover{
+    color: #93c896;
+}
 .sub{
-    background-color: rgba(24, 24, 24, 0.502);
+    background-color: rgba(24, 24, 24, 0.613);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,9 +63,15 @@
 .post-body{
     width: 60%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5rem;
 }
 .post-body p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    line-height: 1.7em;
+   
+   
 }

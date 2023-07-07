@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .header{
-    height: 160px;
+    height: 60.2vh;
+    background: url(../img/leaf.jpg) no-repeat bottom fixed;
     
 }
 
@@ -12,12 +13,17 @@
     text-align: center;
    
 }
+.navWrap{
+    background-color: rgba(24, 24, 24, 0.613);
+    width: 100%;
+    height: 100%;
+}
 
 .div1 {
     width: 100%;
     margin: auto;
     position: absolute;
-    top: 100px;
+    top: 8rem
 
   
 }
@@ -30,10 +36,28 @@
 
 .container{
     position: absolute;
-    top: 0;
-    left: 24px;
-    margin-right: 20px;
-    z-index: 1;
+    padding: 2rem;
+    top: 7px;
+    z-index: 2;
+
+   
+   
+}
+.container a{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.container h2{
+    
+    font-weight: 800;
+    left: 30px;
+    color: #93c896;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container h2:hover{
+    color: white
 }
 .icon{
     width: 40px;
@@ -42,6 +66,7 @@
     
     
 }
+
 .weather{
     
     font-size: 14px;
@@ -62,7 +87,7 @@
 .div2{
 
    position: absolute;
-   padding-right: 20px;
+   padding: 2rem;
    width: 100%;
   
  
@@ -80,7 +105,7 @@
 .div2 li{
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     display: inline-block;
     padding-right: 15px;
 
@@ -88,7 +113,7 @@
 .div2 a{
 
     text-decoration: none;
-    color: #af5b07;
+    color: white;
     padding-left: 15px;
 
 }
@@ -100,15 +125,14 @@
 
 .spacer{
     width: 100%;
-    height: 10vh;
-    margin-top: 7rem;
+    
 }
 
 .intro{
 
     width: 80%;
     margin: auto;
-    margin-top: 40px;
+   
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -245,6 +269,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 5rem;
+    gap: 3rem;
+    
 }
 .post-preview{
     width: 100%;
@@ -253,6 +279,7 @@
     flex-direction: column;
     padding: 1rem;
     border-radius: .5rem;
+   
     
 }
 .post-preview a{
@@ -282,12 +309,20 @@
 .post-preview img{
 
     width: 100%;
-    margin-bottom: 10px;
+    height: 45vh;
+    margin-bottom: 20px;
     border-radius: .5rem;
+    transition: .7s;
     
     
 }
+.post-preview img:hover{
+    transform: scale(1.05);
+    transition: .7s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.671);
 
+   
+}
 .post-preview span{
     
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -316,9 +351,12 @@
     
 }
 @media screen and (max-width: 750px){
+    .container h2{
+        font-size: 1.2em;
+    }
     .spacer{
 
-        margin-top: 8rem;
+        margin-top: 2rem;
 
     }
     .intro h1{
@@ -361,18 +399,18 @@
     .div1 {
 
         position: absolute;
-        top: 30px;
+        top: 8rem;
 
     }
     .div1 img{
         width: 12rem;
     }
     .div2{
-        border-top: .5px solid #cbcbcb8c;
+        
         padding: 10px;
-        border-bottom: .5px solid #cbcbcb8c;
-        top:360px; 
-        background: rgb(29, 29, 29);
+        
+        top:29rem; 
+        
     }
     .div2 ul{
 
@@ -395,7 +433,7 @@
         color: #93c896;
     }
     .div2 li{
-       
+        font-size: 1.1em;
         padding: 0;
     }
     
