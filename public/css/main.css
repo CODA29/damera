@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 .header{
-    height: 60.2vh;
-    background: rgb(47, 68, 47);
+    height: 80vh;
+    background: url(../img/fire.jpg) bottom fixed;
+    background-size: auto;
 }
 
 .header p{
@@ -30,7 +31,7 @@
   
     margin-top: 60px;
     width: 15rem;
-    filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.502));
+    filter: drop-shadow(5px 2px 2px rgba(96, 6, 6, 0.502));
 }
 
 .container{
