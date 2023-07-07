@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 .header{
-    height: 70vh;
+    height: 100vh;
     width: 100vw;
-    background: url(../img/fire.jpg) no-repeat center;
+    background: url(../img/fire.jpg) no-repeat center fixed;
     background-size: 100vw 100vh;
    
 }
