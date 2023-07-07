@@ -5,8 +5,9 @@
 }
 .header{
     height: 80vh;
-    background: url(../img/fire.jpg) bottom fixed;
-    background-size: auto;
+    background: url(../img/fire.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+   
 }
 
 .header p{
