@@ -6,8 +6,8 @@
 .header{
     height: 70vh;
     width: 100vw;
-    background: url(../img/leaf.jpg) no-repeat bottom fixed;
-    background-size: cover;
+    background: url(../img/leaf.jpg) no-repeat center;
+    background-size: 100vw 100vh;
    
 }
 
