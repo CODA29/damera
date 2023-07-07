@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 .header{
-    height: 100vh;
-    background: url(../img/fire.jpg) no-repeat bottom fixed;
+    height: 70vh;
+    background: rgb(59, 96, 59);
     background-size: cover;
    
 }
@@ -32,7 +32,7 @@
   
     margin-top: 60px;
     width: 20rem;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.605));
+    filter: drop-shadow(1px 2px 2px rgb(29, 32, 26));
 }
 
 .container{
@@ -133,7 +133,6 @@
 
     width: 80%;
     margin: auto;
-   
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -160,8 +159,7 @@
     margin: auto;
     color: #454545;
     margin-top: 60px;
-    width: 60%;
-    text-align: center;
+   
 
 
 }
@@ -353,7 +351,7 @@
 }
 @media screen and (max-width: 750px){
     .header{
-        height: 100vh;
+        height: 90vh;
     }
     .container h2{
         font-size: 1.2em;
@@ -366,7 +364,7 @@
     .intro h1{
 
         font-size: 30px;
-        margin-top: 3rem;
+        margin-top: 2rem;
 
     }
     .intro p{
@@ -407,13 +405,13 @@
 
     }
     .div1 img{
-        width: 12rem;
+        width: 15rem;
     }
     .div2{
         
         padding: 10px;
         
-        top:29rem; 
+        top: 35rem; 
         
     }
     .div2 ul{
