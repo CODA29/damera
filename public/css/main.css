@@ -266,19 +266,19 @@
 
 /* Controller for the Literature page */
 .post-container{
-    
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 5rem;
+    overflow-y: scroll;
     gap: 3rem;
     
 }
 .post-preview{
-    width: 100%;
+    width: 450px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     border-radius: .5rem;
    
     
