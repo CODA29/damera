@@ -423,13 +423,13 @@
     }
     .div2 a{
 
-        color: white;
+        color:  #93c896;
         padding: 0;
 
 
     }
     .div2 a:hover{
-        color: #93c896;
+        color: white;
     }
     .div2 li{
         font-size: 1.1em;
