@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .header{
-    height: 100vh;
+    height: 75vh;
     width: 100vw;
     background: url(../img/fire.jpg) no-repeat center fixed;
     background-size: 100vw 100vh;
@@ -39,7 +39,7 @@
 .container{
     position: absolute;
     padding: 2rem;
-    top: 7px;
+    top: 12px;
     z-index: 2;
 
    
@@ -56,7 +56,7 @@
     font-weight: 800;
     font-size: 1.6em;
     left: 30px;
-    color:  #93c896;
+    color:  wheat;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container h2:hover{
@@ -102,7 +102,7 @@
     padding: 0;
     float: right;
     position: relative;
-    top: 19px;
+    top: 12px;
 
 }
 .div2 li{
@@ -116,7 +116,7 @@
 .div2 a{
 
     text-decoration: none;
-    color:  #93c896;
+    color:  wheat;
     padding-left: 15px;
 
 }
@@ -267,20 +267,22 @@
 
 /* Controller for the Literature page */
 .post-container{
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     overflow-y: scroll;
     gap: 3rem;
+    margin-top: 10rem;
     
 }
 .post-preview{
-    width: 450px;
+    
+    width: 400px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    border-radius: .5rem;
+    border-radius: .2rem;
    
     
 }
@@ -311,11 +313,11 @@
 .post-preview img{
 
     width: 100%;
-    height: 45vh;
+    height: 40vh;
     margin-bottom: 20px;
-    border-radius: .5rem;
+    border-radius: 1rem;
     transition: .7s;
-    
+
     
 }
 .post-preview img:hover{
@@ -426,7 +428,7 @@
     }
     .div2 a{
 
-        color:  #93c896;
+        color: wheat;
         padding: 0;
 
 

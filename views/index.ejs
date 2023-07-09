@@ -25,13 +25,13 @@
             <div class="post-preview" >
                 
                     <div>
-                        
+                        <h2 class="post-title"><%= blogposts[i].title %></h2> 
                         <a href="/display/<%= blogposts[i]._id %>"><img src=" <%= blogposts[i].image %> " alt=""> </a>
                     </div>
                     <div>
                         
 
-                        <h2 class="post-title"><%= blogposts[i].title %></h2> 
+                        
                         <span> By:  <%=blogposts[i].userid.username %> 
                             - <%=blogposts[i].datePosted.toDateString() %>
                         </span>
