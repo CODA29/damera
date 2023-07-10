@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
 .header{
     height: 75vh;
     width: 100vw;
@@ -53,11 +54,15 @@
 
 .container h2{
     
-    font-weight: 800;
-    font-size: 1.6em;
+    font-weight: 700;
+    font-size: 2em;
     left: 30px;
-    color:  wheat;
+    color:  rgb(164, 132, 16);
+    filter: drop-shadow(1px .5px 1px rgb(0, 0, 0));
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container #damera{
+    color: #4a6d16;
 }
 .container h2:hover{
     color: white
@@ -118,6 +123,7 @@
     text-decoration: none;
     color:  wheat;
     padding-left: 15px;
+    font-size: 1.2em;
 
 }
 .div2 a:hover{
@@ -138,16 +144,15 @@
     margin: auto;
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-top: 7rem;
    
 }
 .intro h1{
    
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #6b2203;
-    margin-top: 50px;
+    margin-top: 3rem;
     
 }
 .intro h2{
@@ -162,7 +167,7 @@
     margin: auto;
     text-align: center;
     color: #454545;
-    margin-top: 60px;
+    margin-top: 2rem;
    
 }
 .intro_img{
@@ -223,7 +228,7 @@
 .fab {
     
     font-size: 1.7rem;
-    color: #93c896;
+    color: #578d05;
     padding: 7px;
     
 }
@@ -258,7 +263,7 @@
         --fa-bounce-land-scale-x: 1; 
         --fa-bounce-land-scale-y: 1; 
         --fa-bounce-rebound: 0;
-        color: #93c896;
+        color: #578d05;
         
 }
    
@@ -271,9 +276,11 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    overflow-y: scroll;
+    overflow-x: scroll;
     gap: 3rem;
     margin-top: 10rem;
+    
+    
     
 }
 .post-preview{
@@ -288,12 +295,12 @@
 }
 .post-preview a{
     
-    color: #6b2203;
+    color: #578d05;
     
 }
 .post-preview h2{
     font-size: 2rem;
-    color: #6b2203;
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 1.5rem;
     
@@ -313,7 +320,7 @@
 .post-preview img{
 
     width: 100%;
-    height: 40vh;
+    height: 40%;
     margin-bottom: 20px;
     border-radius: 1rem;
     transition: .7s;
@@ -336,10 +343,11 @@
 /* contribute button on Literature page */
 .contribute{
 
-    width: 100px;
+    width: 200px;
     margin: auto;
     border-radius: 2px;
-    align-items: center;
+    display: flex;
+    justify-content: center;
     margin-top: 5rem;
     
 }
@@ -347,7 +355,7 @@
 
     color: white;
     text-decoration: none;
-    background-color: #af5b07;
+    background-color: #578d05;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 15px;
     border-radius: 5px;
@@ -361,7 +369,7 @@
         
     }
     .container h2{
-        font-size: 1.2em;
+        font-size: 1.7em;
     }
     .spacer{
 
@@ -393,6 +401,7 @@
         margin: auto;
         display: flex;
         flex-direction: column;
+        overflow-x: unset;
     }
     
     .post-preview h2{
@@ -460,7 +469,8 @@
     }
     .contribute {
 
-        margin-top: 150px;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
 
     }
     .contribute a{

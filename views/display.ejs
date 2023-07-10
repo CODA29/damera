@@ -4,15 +4,15 @@
     <%- include('layouts/header'); -%>
 <body>
     
-    <div class="display-header" style="background: url('<%= blogpost.image %>') fixed no-repeat top;  background-size: 100vw 100vh;">
+    <div class="display-header" style="background: url('<%= blogpost.image %>') fixed top;  background-size: cover;">
         <div class="nav">
             <div class="logo">
                 <a href="/"><img src="../img/TransparentDameraLogo.png" alt="logo"></a>
             </div>
             <div class="link">
-                <a href="/">HOME</a>
+                <a href="/">Home</a>
                 <% if(loggedIn) { %> 
-                     <a href="/auth/logout"> LOG OUT </a>
+                     <a href="/auth/logout"> Log Out </a>
                     <% } 
                 %>
             </div>

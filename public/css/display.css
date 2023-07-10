@@ -5,7 +5,7 @@
 }
 
 .nav{
-    background-color: rgba(24, 24, 24, 0.613);
+    background-color: rgba(24, 24, 24, 0.743);
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -15,7 +15,7 @@
 }
 
 .logo{
-    width: 90px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +32,7 @@
     
 }
 .link a{
+    cursor: pointer;
     padding: 1rem;
     text-decoration: none;
     font-size: 1.2em;
@@ -42,7 +43,7 @@
     color: white;
 }
 .sub{
-    background-color: rgba(24, 24, 24, 0.613);
+    background-color: rgba(24, 24, 24, 0.743);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -3,7 +3,7 @@
         
     <div class="navWrap">
         <div class="container">
-            <a href="/"><h2>DAMERA CREATIVES</h2></a> 
+            <a href="/"><h2> <span id="damera">Damera</span>Creatives</h2></a> 
 
         </div>
 
@@ -13,15 +13,16 @@
 
         <div class="div2">
             <ul>
-                <li> <a href="/"> HOME </a></li>
+                <li> <a href="/"> Home </a></li>
                 <!-- <li> <a href="/about"> About </a></li> -->
                 <!--<li> <a href="/portfolio"> Portfolio </a></li> -->
-                <li> <a href="/blog"> POST </a></li>
+                <!-- <li> <a href="/blog"> POST </a></li> -->
                 <% if(loggedIn) { %> 
-                    <li> <a href="/auth/logout"> LOG OUT </a></li>
+                    <li> <a href="/auth/logout"> Log Out </a></li>
                     <% } %>
                 <% if(!loggedIn) { %>
                 <!-- <li> <a href="/auth/register"> Join </a></li> -->
+                    <li> <a href="/auth/login"> Log In </a></li>
                 <% } %>
                     
                 
