@@ -408,7 +408,10 @@
         flex-direction: column;
         overflow-x: unset;
     }
-    
+    .post-preview{
+        width: 80%;
+        margin: auto;
+    }
     .post-preview h2{
 
         font-size: 25px;
@@ -428,7 +431,7 @@
     .div1 img{
         width: 15rem;
         filter: none;
-        filter: drop-shadow(1px 5px 4px rgba(107, 107, 107, 0.875));
+        filter: drop-shadow(1px 5px 4px rgba(48, 48, 48, 0.875));
     }
     .div2{
         
