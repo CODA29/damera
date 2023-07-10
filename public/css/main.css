@@ -314,14 +314,15 @@
     padding-bottom: 15px;
     word-spacing: 0.6pt;
    
+   
     
 }
 
 .post-preview img{
 
     width: 100%;
-    height: 40%;
-    margin-bottom: 20px;
+    height: 40vh;
+    margin-bottom: 2rem;
     border-radius: 1rem;
     transition: .7s;
 
@@ -364,12 +365,16 @@
 }
 @media screen and (max-width: 750px){
     .header{
-        height: 75vh;
+        height: 50vh;
         z-index: 99;
+        background:#ffffff;
+
         
     }
     .container h2{
+        display: none;
         font-size: 1.7em;
+        filter: none;
     }
     .spacer{
 
@@ -379,7 +384,7 @@
     .intro h1{
 
         font-size: 30px;
-        margin-top: 2rem;
+        margin-top: 5rem;
 
     }
     .intro p{
@@ -391,13 +396,13 @@
     }
     
     .intro{
-
+        
         width: 100%;
         
 
     }
     .post-container{
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -409,20 +414,26 @@
         font-size: 25px;
 
     }
+    .post-preview img{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
     .div1 {
 
         position: absolute;
-        top: 8rem;
+        top: 3rem;
 
     }
     .div1 img{
         width: 15rem;
+        filter: none;
+        filter: drop-shadow(1px 5px 4px rgba(107, 107, 107, 0.875));
     }
     .div2{
         
         padding: 10px;
-        
-        top: 35rem; 
+        top: 27rem; 
         
     }
     .div2 ul{
@@ -437,13 +448,13 @@
     }
     .div2 a{
 
-        color: wheat;
+        color: #578d05;
         padding: 0;
 
 
     }
     .div2 a:hover{
-        color: white;
+        color: unset
     }
     .div2 li{
         font-size: 1.1em;
