@@ -3,14 +3,14 @@ const storeUser = require("./storeUser")
 
 module.exports = (req, res) =>{
     var username = ""
-    var password =""
+    var password = ""
     var name=""
    
    // var success = "You have successfully registered"
     const data = req.flash('data')[0];
     if(typeof data != "undefined"){
         username = data.username
-        password = data.password
+        password = toString((data.password));
         name =  data.name
       
         
