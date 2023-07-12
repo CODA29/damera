@@ -53,8 +53,6 @@ $(document).ready( ()=>{
     if (isValid == false){
         event.preventDefault()
         
-    }else{
-	    alert("Thanks, I will get back to you soon");
     }
     
     
