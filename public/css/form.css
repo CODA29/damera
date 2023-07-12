@@ -2,7 +2,7 @@
 .form{
    
     position: relative;
-    top: 25rem;
+    top: 30rem;
  
 }
 .formPart{
@@ -35,13 +35,8 @@ label{
     padding-left: 5px;
 }
 .btn{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px 20px;
-    background: #af5b07;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-
+     padding: 10px 20px;
+   
 }
 .formPart > span {
 	color: #93c896;
@@ -53,22 +48,36 @@ label{
     
 }
 
-#response{
-    
-    margin-bottom: 50px;
-}
-#response p{
-    background-color: #93c896;
-    color: white;
-    padding: 20px 20px;
+.error_display{
 
+    background-color: #93c896;
+    margin: auto;
+    height: 100px;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 5px;
+    background:  #578d05;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error_display ul{
+    
+    list-style: none;
+   
+
+}
+.error_display ul li{
+    color: white;
+    text-align: center;
 }
 .signupMessage{
     position: relative;
-    top: 25rem;
+    top: 30rem;
 }
 @media screen and (max-width: 800px) {
-    .formPart{
+    .formPart, .error_display{
         width: 80%;
     }
+    
 }
