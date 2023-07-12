@@ -5,10 +5,9 @@
 }
 
 .header{
-    
+   
     width: 100vw;
     
-   
 }
 
 .header p{
@@ -20,6 +19,7 @@
     width: 100%;
     position: absolute;
     top: 0;
+    
     
 }
 

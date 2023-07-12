@@ -4,5 +4,6 @@ module.exports = (req,res) =>{
     Message.create(req.body, (error, message) =>{
         res.redirect('/')
         
+        
     })
 }
