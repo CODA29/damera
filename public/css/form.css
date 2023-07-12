@@ -73,7 +73,7 @@ label{
 }
 .signupMessage{
     position: relative;
-    top: 30rem;
+    top: 33rem;
 }
 @media screen and (max-width: 800px) {
     .formPart, .error_display{
