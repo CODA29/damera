@@ -1,5 +1,6 @@
 const User = require('../models/User.js')
 const path = require('path')
+const Alert = require("../models/Form")
 module.exports = (req,res) => {
     User.create(req.body, (error, user) =>{
         if(error){
@@ -9,10 +10,15 @@ module.exports = (req,res) => {
             //req.session.validationErrors = validationErrors
             req.flash('data', req.body)
             return res.redirect('/auth/register')
+        }else{
+            res.redirect('/auth/login')
+           
         }
-           res.redirect('/auth/login')
+           
            
         
         
     })
+    
+    
 }
