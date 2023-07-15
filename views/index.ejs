@@ -29,20 +29,21 @@
             <div class="post-preview" data-aos="slide-up" data-aos-duration="2000" >
                 
                     <div>
-                        <h2 class="post-title"><%= blogposts[i].title %></h2> 
                         <a href="/display/<%= blogposts[i]._id %>"><img src=" <%= blogposts[i].image %> " alt=""> </a>
+                        <h2 class="post-title"><%= blogposts[i].title %></h2> 
                     </div>
                     <div>
                         
 
                         
-                        <span> By:  <%=blogposts[i].userid.username %> 
-                            - <%=blogposts[i].datePosted.toDateString() %>
-                        </span>
-
-                        <br><br><br>
-                        
-                        <p><a href="/display/<%= blogposts[i]._id %>">Read Post</a></p>
+                    <span> By:  <%=blogposts[i].userid.username %> 
+                        - <%=blogposts[i].datePosted.toDateString() %>
+                    </span>
+                    
+                   
+                    <br><br><br>
+                    
+                    <p><a href="/display/<%= blogposts[i]._id %>">Read Post</a></p>
         
                     </div>
                     
