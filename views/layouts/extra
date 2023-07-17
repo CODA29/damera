@@ -1,0 +1,78 @@
+<a href="/"><h2> <span id="damera">Damera</span>Creatives</h2></a> 
+    <ul>
+        <li> <a href="/"> Home </a></li>
+        <!-- <li> <a href="/about"> About </a></li> -->
+        <!--<li> <a href="/portfolio"> Portfolio </a></li> -->
+        <!-- <li> <a href="/blog"> POST </a></li> -->
+        <% if(loggedIn) { %> 
+            <li> <a href="/auth/logout"> Log Out </a></li>
+            <% } %>
+        <% if(!loggedIn) { %>
+        <!-- <li> <a href="/auth/register"> Join </a></li> -->
+            <li> <a href="/auth/login"> Log In </a></li>
+        <% } %>
+            
+        
+        
+    </ul>
+
+
+    .container{
+        position: absolute;
+        padding: 2rem;
+        z-index: 2;
+       
+    }
+    .container a{
+        text-decoration: none;
+        cursor: pointer;
+        
+    }
+    
+    .container h2{
+        
+        font-weight: 700;
+        font-size: 2em;
+        left: 30px;
+        color:  rgb(164, 132, 16);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .container #damera{
+        color: #4a6d16;
+    }
+
+    .div2{
+
+        position: absolute;
+        padding: 2rem;
+        width: 100%;
+       
+      
+       
+     }
+     .div2 ul{
+     
+         list-style: none;
+         padding: 0;
+         float: right;
+         position: relative;
+         
+     
+     }
+     .div2 li{
+     
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-size: 1.2em;
+         display: inline-block;
+         padding-right: 15px;
+     
+     }
+     .div2 a{
+     
+         text-decoration: none;
+         color:   #405d14;
+         padding-left: 15px;
+         font-size: 1.2em;
+     
+     }
+     

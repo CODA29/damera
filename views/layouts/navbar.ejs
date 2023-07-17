@@ -1,40 +1,35 @@
 <div class="header">
         
         
-    <div class="navWrap">
-        <div class="container">
-            <a href="/"><h2> <span id="damera">Damera</span>Creatives</h2></a> 
+    <div class="mainNav">
 
+        <div class="dameraLogo" data-aos="zoom-in" data-aos-duration="3000">
+            <a href="/"> <img src="/img/TransparentDameraLogo.png" alt="logo"> </a>
+            <a href="/">DAMERA <span class="creatives">CREATIVES</span></a> 
         </div>
 
-        <div class="div1" data-aos="zoom-in" data-aos-duration="3000">
-            <p> <a href="/"> <img src="/img/TransparentDameraLogo.png" alt="logo"> </a> </p>
-        </div>
+       
 
-        <div class="div2">
-            <ul>
-                <li> <a href="/"> Home </a></li>
-                <!-- <li> <a href="/about"> About </a></li> -->
-                <!--<li> <a href="/portfolio"> Portfolio </a></li> -->
-                <!-- <li> <a href="/blog"> POST </a></li> -->
-                <% if(loggedIn) { %> 
-                    <li> <a href="/auth/logout"> Log Out </a></li>
-                    <% } %>
-                <% if(!loggedIn) { %>
-                <!-- <li> <a href="/auth/register"> Join </a></li> -->
-                    <li> <a href="/auth/login"> Log In </a></li>
+        <div class="pages">
+            <a href="/"> HOME </a>
+            <% if(loggedIn) { %> 
+                <a href="/auth/logout"> LOG OUT </a>
                 <% } %>
-                    
-                
-                
-            </ul>
+            <% if(!loggedIn) { %>
+            <!-- <li> <a href="/auth/register"> Join </a></li> -->
+                <a href="/auth/login"> LOG IN </a>
+            <% } %>
 
         </div>
+        <div class="burger">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
 
+        </div>
+        
         
     </div>
-        
 
- 
     
 </div>
