@@ -10,7 +10,7 @@
 
        
 
-        <div class="pages">
+        <div class="pages" id="myLinks">
             <a href="/"> HOME </a>
             <% if(loggedIn) { %> 
                 <a href="/auth/logout"> LOG OUT </a>
@@ -22,13 +22,24 @@
 
         </div>
         <div class="burger">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" id="i"></i>
             </a>
 
         </div>
         
         
+    </div>
+
+    <div class="burgerMenu">
+        <a href="/" class="active"> HOME </a>
+            <% if(loggedIn) { %> 
+                <a href="/auth/logout"> LOG OUT </a>
+                <% } %>
+            <% if(!loggedIn) { %>
+            <!-- <li> <a href="/auth/register"> Join </a></li> -->
+                <a href="/auth/login"> LOG IN </a>
+            <% } %>
     </div>
 
     
