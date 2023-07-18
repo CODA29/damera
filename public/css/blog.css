@@ -1,0 +1,66 @@
+.blogIntro h1{
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+/* Controller for the Literature page */
+.post-container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+    gap: 3rem;
+   
+  
+}
+.post-preview{
+    
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: .7s;
+    border-radius: .5rem;
+    
+    
+}
+
+.post-preview a{
+    color: #578d05; 
+    font-size: 1.3rem;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.post-preview h2{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 1.5rem;
+    
+}
+.post-preview span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.post-preview img{
+   
+    width: 100%;
+    margin-bottom: 2rem;
+    transition: .7s;
+    border-radius: .5rem;
+}
+.post-preview img:hover{
+    transform: scale(1.03);
+    transition: .7s;
+}
+
+@media screen and (max-width: 900px){
+    .blogIntro h1{
+        font-size: 1.7rem;
+    }
+    .post-container{
+        width: 90%;
+    }
+}

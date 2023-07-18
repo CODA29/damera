@@ -40,21 +40,20 @@
 
 .contribute{
     
-    width: 150px;
-    background: #578d05;
+   
     display: flex;
-    justify-content: center;
     margin-top: 3rem;
-    border-radius: 5px;
-    padding: 20px;
+   
 }
 .contribute a{
-
+    
+    background: #578d05;
     color: white;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    
+    padding: 1.5rem;
+    border-radius: 5px;
 }
 
 
@@ -68,9 +67,9 @@
         width: 100%;
     }
     .contribute{
-        margin: auto;
-        padding: 15px;
+        justify-content: center;
         margin-top: 5rem;
+
     }
     .contribute a{
         font-size: 15px;
