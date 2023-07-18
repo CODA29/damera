@@ -11,63 +11,67 @@
 
     <div class="spacer"> </div>
     
+    <div class="formWrapper">
+        <div class="item1">
+            <div class="formHead" data-aos="slide-up" data-aos-duration="1000">
+                <h1> SIGN UP </h1>
+            </div>
+            <form action="/users/register" class="form" id="form" method="POST" enctype="multipart/form-data" >
+
     
-    <div class="intro" data-aos="slide-up" data-aos-duration="2000">
-        <h1> SIGN UP </h1>
+
+                <% if(errors != null && errors.length > 0) { %>  
+                    <div class="error_display">
+                        <ul>
+                            <% for (var i = 0; i < errors.length; i++){ %> 
+                                <li> <%= errors[i] %> </li>
+                                <%} %>
+                        </ul>
+                
+                    </div>
+                    
+                    <%} 
+                    
+                %> 
+                    
+                    
+                
+                <div class="formPart">
+                    <label for="name"> Name </label> <br>
+                    <input type="text" name="name" class="userInpt" id="name" value="<%=name %>" placeholder="Enter your name" required>
+                    <span>*</span>
+                </div>
+                <div class="formPart">
+                    <label for="username"> Username </label> <br>
+                    <input type="text" name="username" class="userInpt" id="username" value="<%=username %>" placeholder="Create a username" required>
+                    <span>*</span>
+                </div>
+        
+                <div class="formPart">
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" class="userInpt" id="password" value="<%=password %>" placeholder="Create a password" required>
+                    <span>*</span>
+                </div>
+        
+                <div class="formPart">
+                    <button  id="submit" type="submit" class="userBtn"> SIGN UP </button>
+                </div>
+                
+            </form>
+        </div>
+        <div class="item2" data-aos="slide-right" data-aos-duration="1000">
+            <img src="/img/Collaboration.png" alt="illustration of people working">
+
+        </div>
 
     </div>
+    
+   
 
     
     
     
-    <form action="/users/register" class="form" id="form" method="POST" enctype="multipart/form-data" >
-
-        
-
-        <% if(errors != null && errors.length > 0) { %>  
-            <div class="error_display">
-                <ul>
-                    <% for (var i = 0; i < errors.length; i++){ %> 
-                        <li> <%= errors[i] %> </li>
-                        <%} %>
-                </ul>
-        
-            </div>
-            
-            <%} 
-            
-        %> 
-            
-            
-       
-        <div class="formPart">
-            <label for="name"> Name </label> <br>
-            <input type="text" name="name" class="inpt" id="name" value="<%=name %>" placeholder="Enter your name" required>
-            <span>*</span>
-        </div>
-        <div class="formPart">
-            <label for="username"> Username </label> <br>
-            <input type="text" name="username" class="inpt" id="username" value="<%=username %>" placeholder="Create a username" required>
-            <span>*</span>
-        </div>
-
-        <div class="formPart">
-            <label for="password">Password</label> <br>
-            <input type="password" name="password" class="inpt" id="password" value="<%=password %>" placeholder="Create a password" required>
-            <span>*</span>
-        </div>
-
-        <div class="formPart">
-            <button  id="submit" type="submit" class="btn"> SIGN UP </button>
-        </div>
-        <div class="formPart">
-           <!-- <p><%= %></p> --> 
-        </div>
-
-        
-
-    </form>
-
+    
     
     <div class="spacer2"> 
         <!--Page footer-->

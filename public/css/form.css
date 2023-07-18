@@ -1,20 +1,19 @@
 .formWrapper{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: auto;
+    gap: 2rem;
 }
-.item1{
-    padding: 2rem;
-}
+
 .item2 img{
     width: 500px;
 }
 .form{
     width: 500px;
+    margin: auto;
 
 }
 .formHead h1{
@@ -44,7 +43,7 @@ label{
     
     
 }
-.inpt{
+.userInpt{
      
     width: 100%;
     height: 2.5rem;
@@ -58,12 +57,19 @@ label{
     font-size: 17px;
     padding-left: 5px;
 }
-.btn{
+.userBtn{
      padding: 10px 20px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background: #578d05;
+     color: white;
+     font-size: 17px;
+     cursor: pointer;
+     border-radius: 5px;
+     border: none;
    
 }
 .formPart > span {
-	color: #93c896;
+	color: #578d05;
     margin-left: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
@@ -74,14 +80,15 @@ label{
 
 .error_display{
     margin: auto;
-    height: 100px;
+    height: 80px;
     max-width: 600px;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 5px;
     background:  #578d05;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 .error_display ul{
     
@@ -99,14 +106,28 @@ label{
     .formWrapper{
         flex-direction: column-reverse;
     }
+    .item1{
+        width: 350px;
+        padding: 1rem;
+    }
+    .form{
+        width: 100%;
+    }
+    label{
+        font-size: 17px;
+    }
+    .userInpt{
+        font-size: 14px;
+    }
+    .userBtn{
+        font-size: 15px;
+    }
 
-   
-    .signupMessage{
-        
+    .item2 img{
+        width: 350px;
     }
-    .signupMessage p{
-        
+    .formHead h1{
+        font-size: 1.7rem;
     }
-    
     
 }

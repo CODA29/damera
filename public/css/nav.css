@@ -64,7 +64,7 @@
 .burgerMenu a{
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: .9rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: block;
     padding: 2rem;
@@ -83,10 +83,10 @@
         padding: 1.5rem;
     }
     .dameraLogo img{
-        width: 130px;
+        width: 100px;
     }
     .dameraLogo a{
-        font-size: 1em;
+        font-size: .9rem;
     }
     .pages{
         display: none;
