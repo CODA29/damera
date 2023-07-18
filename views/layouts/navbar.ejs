@@ -12,13 +12,14 @@
 
         <div class="pages" id="myLinks">
             <a href="/"> HOME </a>
+            <a href="/blog"> BLOG </a>
             <% if(loggedIn) { %> 
                 <a href="/auth/logout"> LOG OUT </a>
                 <% } %>
             <% if(!loggedIn) { %>
             <!-- <li> <a href="/auth/register"> Join </a></li> 
             <a href="/auth/login"> LOG IN </a>-->
-                <a href="/blog"> BLOG </a>
+                
                 
             <% } %>
 
@@ -35,13 +36,14 @@
 
     <div class="burgerMenu">
         <a href="/" class="active"> HOME </a>
+        <a href="/blog"> BLOG </a>
             <% if(loggedIn) { %> 
                 <a href="/auth/logout"> LOG OUT </a>
                 <% } %>
             <% if(!loggedIn) { %>
             <!-- <a href="/auth/register"> Join </a> -->
             <!-- <a href="/auth/login"> LOG IN </a> --> 
-            <a href="/blog"> BLOG </a>
+            
             <% } %>
     </div>
 

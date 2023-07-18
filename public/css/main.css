@@ -31,17 +31,16 @@
 .spacer{
    
     width: 100%;
-    position: relative;
-    height: 5rem;
+    height: 3rem;
     
 }
 
 .spacer2{
    
-    border-top: .5px solid rgba(209, 209, 209, 0.331);
     margin-top: 100px;
-    padding: 60px;
+    padding: 5rem;
     background: #f7f6f6;
+   
    
 }
 
@@ -102,7 +101,7 @@
     left: 1rem;
     font-size: .6rem;
     cursor: pointer;
-    z-index: 99;
+    z-index: 2;
 }
 #scrollBtn .fa-solid{
         --fa-bounce-start-scale-x: 1; 
@@ -128,36 +127,7 @@
         display: none;
         font-size: 1.7em;
         filter: none;
-    }
-    .spacer{
-
-        height: 2rem;
-
-    }
-    
-    .post-container{
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        overflow-x: unset;
-    }
-    .post-preview{
-        width: 80%;
-        margin: auto;
-    }
-    .post-preview h2{
-
-        font-size: 25px;
-
-    }
-    .post-preview img{
-        max-width: 600px;
-        margin: auto;
-        margin-bottom: 2rem;
-    }
-    
-    
+    } 
     .weather{
     
         font-size: 13px;

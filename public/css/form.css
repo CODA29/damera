@@ -11,6 +11,16 @@
 .item2 img{
     width: 500px;
 }
+.createPostHead{
+    width: 500px;
+    margin: auto;
+}
+.createPostHead h1{
+    font-weight: 400;
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
 .form{
     width: 500px;
     margin: auto;
@@ -52,7 +62,7 @@ label{
     padding-left: 5px;
    
 }
-.desc{
+.postBody{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 17px;
     padding-left: 5px;
@@ -106,9 +116,17 @@ label{
     .formWrapper{
         flex-direction: column-reverse;
     }
+    .createPostHead{
+        width: 350px;
+        padding: 1rem;
+    }
+    .createPostHead h1{
+        font-size: 1.5rem;
+    }
     .item1{
         width: 350px;
         padding: 1rem;
+        margin: auto;
     }
     .form{
         width: 100%;
@@ -122,7 +140,9 @@ label{
     .userBtn{
         font-size: 15px;
     }
-
+    .postBody{
+        font-size: 15px;
+    }
     .item2 img{
         width: 350px;
     }

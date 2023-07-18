@@ -1,11 +1,11 @@
 .mainNav{
-    
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
+    padding-top: 1rem;
+    
     
 }
 .dameraLogo{
@@ -17,7 +17,7 @@
     
 }
 .dameraLogo img{
-    width: 150px;
+    width: 100px;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.605));
 
 }
@@ -82,9 +82,7 @@
         justify-content: space-between;
         padding: 1.5rem;
     }
-    .dameraLogo img{
-        width: 100px;
-    }
+
     .dameraLogo a{
         font-size: .9rem;
     }

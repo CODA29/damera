@@ -9,52 +9,54 @@
     <%- include('layouts/navbar'); -%>
     
 
-    <div class="spacer"> </div>
+    <div class="spacer"></div>
 
-    <div class="intro" data-aos="slide-up" data-aos-duration="2000">
-        <h1> What's on your mind? </h1>
-        <p> </p>
+    <div class="createPostHead" data-aos="slide-up" data-aos-duration="2000">
+        <h1> WHAT'S ON YOUR MIND? </h1>
+    </div>
+    
+    <div class="item1">
+
+        <form action="/posts/store" class="form"  id="form" method="POST" enctype="multipart/form-data">
+
+        
+
+            <div class="formPart">
+                <label for="title">Title</label> <br>
+                <input type="text" name="title" class="userInpt" id="title" placeholder="Your title">
+                <span>*</span>
+            </div>
+    
+            
+            <div class="formPart">
+                <label for="body"> Share your thoughts </label> <br>
+                <textarea name="body" id="body" class="postBody" style="height: 12rem; width: 100%" placeholder="Write your post" ></textarea>
+                <span>*</span>
+    
+            </div>
+    
+            <div class="formPart">
+                <label for="image">Image</label> <br>
+                <input type="file" name="image" class="userInpt" id="image">
+                
+            </div>
+    
+                
+            <div class="formPart">
+                <button  id="submit" type="submit" class="userBtn"> POST </button>
+            </div>
+    
+            <div class="formPart">
+                <div id="response">
+    
+                </div>
+    
+            </div>
+    
+        </form>
 
     </div>
-
     
-    <form action="/posts/store" class="form"  id="form" method="POST" enctype="multipart/form-data">
-
-        
-
-        <div class="formPart">
-            <label for="title">Title</label> <br>
-            <input type="text" name="title" class="inpt" id="title" placeholder="Your title">
-            <span>*</span>
-        </div>
-
-        
-        <div class="formPart">
-            <label for="body"> Share your thoughts </label> <br>
-            <textarea name="body" id="body" class="desc" style="height: 12rem; width: 100%" placeholder="Write your post" ></textarea>
-            <span>*</span>
-
-        </div>
-
-        <div class="formPart">
-            <label for="image">Image</label> <br>
-            <input type="file" name="image" class="inpt" id="image">
-            
-        </div>
-
-            
-        <div class="formPart">
-            <button  id="submit" type="submit" class="btn"> POST </button>
-        </div>
-
-        <div class="formPart">
-            <div id="response">
-
-            </div>
-
-        </div>
-
-    </form>
 
     <div class="spacer2"> 
 
