@@ -1,6 +1,25 @@
-.blogIntro h1{
-    text-align: center;
+.blogIntro{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blogIntro h2{
+    font-weight: 300;
     font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.recentHeader{
+    width: 77%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    margin-top: 5rem;
+    padding-left: 1rem ;
+}
+.recentHeader h2{
+    font-weight: 300;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
@@ -11,7 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 3rem;
     margin-bottom: 10rem;
     gap: 3rem;
    
@@ -35,13 +54,14 @@
 }
 .post-preview h2{
     font-size: 2rem;
+    font-weight: 300;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 1.5rem;
     
 }
 .post-preview span{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    font-weight: 400;
 }
 
 .post-preview img{
@@ -57,10 +77,10 @@
 }
 
 @media screen and (max-width: 900px){
-    .blogIntro h1{
-        font-size: 1.7rem;
+    .blogIntro h2{
+        font-size: 1.3rem;
     }
-    .post-container{
-        width: 90%;
+    .post-preview{
+       width: 350px;
     }
 }
