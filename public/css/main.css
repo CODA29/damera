@@ -32,68 +32,17 @@
    
     width: 100%;
     position: relative;
-    height: 10rem;
+    height: 5rem;
     
 }
 
-.intro{
-    position: relative;
-    top: 25rem;
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-   
-   
-}
-.intro h1{
-   
-    text-align: center;
-    font-size: 2.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 3rem;
-    
-}
-.intro h2{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #93c896;
-}
-.intro p{
-    font-size: 1.05rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.8;
-    margin: auto;
-    text-align: center;
-    color: #454545;
-    margin-top: 2rem;
-   
-}
-.intro_img{
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-.intro_img img{
-    width: 100%;
-    border-radius: .5rem;
-}
-.intro_img h1{
-    padding: 2rem;
-    color: #93c896;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 .spacer2{
    
     border-top: .5px solid rgba(209, 209, 209, 0.331);
     margin-top: 100px;
     padding: 60px;
-    background-color: #f7f6f6;
-    position: relative;
-    top: 35rem;
+    background: #f7f6f6;
+   
 }
 
 /* Controller for the social media icons */
@@ -255,30 +204,8 @@
     
 }
 
-/* contribute button on Literature page */
-.contribute{
-    position: relative;
-    top: 25rem;
-    width: 200px;
-    margin: auto;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-    
-}
-.contribute a{
 
-    color: white;
-    text-decoration: none;
-    background-color: #578d05;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 20px;
-    
-}
-@media screen and (max-width: 750px){
+@media screen and (max-width: 900px){
     
     .container h2{
         display: none;
@@ -287,29 +214,10 @@
     }
     .spacer{
 
-        margin-top: 2rem;
-
-    }
-    .intro h1{
-
-        font-size: 30px;
-        margin-top: 5rem;
-
-    }
-    .intro p{
-
-        font-size: 1rem;
-        width: 85%;
-        text-align: unset;
+        height: 2rem;
 
     }
     
-    .intro{
-        
-        width: 100%;
-        
-
-    }
     .post-container{
         width: 100%;
         margin: auto;
@@ -331,41 +239,7 @@
         margin: auto;
         margin-bottom: 2rem;
     }
-    .div1 {
-
-        position: absolute;
-        
-
-    }
-    .div1 img{
-        width: 15rem;
-        filter: none;
-        filter: drop-shadow(1px 5px 4px rgba(48, 48, 48, 0.875));
-    }
-    .div2{
-        
-        padding: 10px;
-        top: 30rem; 
-        
-    }
-    .div2 ul{
-
-        
-        width: 100%;
-        position: unset;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-       
-    }
     
-    .div2 a:hover{
-        color: unset
-    }
-    .div2 li{
-        font-size: 1.1em;
-        padding: 0;
-    }
     
     .weather{
     
@@ -384,17 +258,8 @@
         width: 30px;
      
     }
-    .contribute {
-
-        margin-top: 5rem;
-        margin-bottom: 7rem;
-
-    }
-    .contribute a{
-
-        font-size: 15px;
-
-    }
+    
+    
     .copy{
 
         font-size: 15px;
@@ -407,16 +272,4 @@
         
     }
     
-}
-@media screen and (min-width: 2000px){
-    .intro p{
-        margin-top: 80px;
-    }
-    .intro h1{
-        margin-top: 150px;
-    }
-    .contribute{
-        margin-top: 200px;
-    }
-
 }

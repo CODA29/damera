@@ -1,16 +1,40 @@
-
+.formWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.item1{
+    padding: 2rem;
+}
+.item2 img{
+    width: 500px;
+}
 .form{
-   
-    position: relative;
-    top: 30rem;
- 
+    width: 500px;
+
+}
+.formHead h1{
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 .formPart{
-     width: 40%;
-     margin: auto;
-     margin-top: 20px;
-
-     
+    margin-top: 1rem;
+}
+.signupMessage {
+   margin-top: 2rem;
+}
+.signupMessage p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+}
+.signupMessage a{
+    cursor: pointer;
+    color: #af5b07;
 }
 label{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -49,11 +73,9 @@ label{
 }
 
 .error_display{
-
-    background-color: #93c896;
     margin: auto;
     height: 100px;
-    width: 40%;
+    max-width: 600px;
     padding: 2rem;
     border-radius: 5px;
     background:  #578d05;
@@ -65,19 +87,26 @@ label{
     
     list-style: none;
    
-
 }
 .error_display ul li{
     color: white;
     text-align: center;
 }
-.signupMessage{
-    position: relative;
-    top: 33rem;
-}
-@media screen and (max-width: 800px) {
-    .formPart, .error_display{
-        width: 80%;
+
+
+
+@media screen and (max-width: 900px) {
+    .formWrapper{
+        flex-direction: column-reverse;
     }
+
+   
+    .signupMessage{
+        
+    }
+    .signupMessage p{
+        
+    }
+    
     
 }

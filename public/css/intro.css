@@ -1,0 +1,85 @@
+/*container*/
+.introContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    
+
+}
+
+.intro{
+    
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+   
+   
+}
+.intro h1{
+   
+    
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+.intro p{
+    font-size: 1.05rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.8;
+    margin: auto;
+    color: #454545;
+    margin-top: 2rem;
+    
+}
+
+/* start writing button */
+
+.contribute{
+    
+    width: 150px;
+    background: #578d05;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 20px;
+}
+.contribute a{
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+
+
+/*illustraion*/
+.illustration img{
+    width: 650px;
+}
+@media screen and (max-width: 900px){
+    .introContainer{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .contribute{
+        margin: auto;
+        margin-top: 5rem;
+    }
+    .illustration img{
+        width: 500px;
+    }
+    .intro{
+        width: 85%;
+        padding: 1rem;
+    }
+    .intro h1{
+        text-align: center;
+    }
+
+}
