@@ -25,7 +25,7 @@
     <div class="post-container">
         <% for (var i = 0; i < blogposts.length; i++) { %> 
             
-            <div class="post-preview" data-aos="slide-up" data-aos-duration="2000" >
+            <div class="post-preview" data-aos="zoom-in" data-aos-duration="2000" >
                 
                     <div>
                         <a href="/display/<%= blogposts[i]._id %>"><img src=" <%= blogposts[i].image %> " alt=""> </a>
@@ -58,11 +58,11 @@
 
     <div class="spacer2"> 
 
-    <!--Page footer-->
-    <%- include('layouts/footer'); -%>
+        <!--Page footer-->
+        <%- include('layouts/footer'); -%>
 
-    <!--Page Scripts-->
-    <%- include('layouts/scripts'); -%>
+        <!--Page Scripts-->
+        <%- include('layouts/scripts'); -%>
     </div>
 
     
