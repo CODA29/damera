@@ -82,6 +82,8 @@
     }
     .post-preview{
        width: 350px;
+       box-shadow: .5px .5px 5px gray;
+       padding: .4rem;
     }
     .recentHeader{
         width: 77%;
