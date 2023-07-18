@@ -43,7 +43,8 @@
     flex-direction: column;
     transition: .7s;
     border-radius: .5rem;
-    
+    border-bottom: .5px solid gray;
+    padding-bottom: 2rem;
     
 }
 
@@ -82,8 +83,6 @@
     }
     .post-preview{
        width: 350px;
-       box-shadow: .5px .5px 5px gray;
-       padding: .4rem;
     }
     .recentHeader{
         width: 77%;
