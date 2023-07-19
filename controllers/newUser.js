@@ -7,7 +7,7 @@ module.exports = (req, res) =>{
     var password = ""
     var name=""
    
-   // var success = "You have successfully registered"
+   
     const data = req.flash('data')[0];
     if(typeof data != "undefined"){
         username = data.username

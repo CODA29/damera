@@ -11,7 +11,10 @@ module.exports = (req,res) => {
             req.flash('data', req.body)
             return res.redirect('/auth/register')
         }else{
-            res.redirect('/auth/login')
+
+            const successMessage = 'Account created successfully!';
+            //res.redirect(`/success?message=${encodeURIComponent(successMessage)}`);
+            res.redirect('/sucess')
            
         }
            
