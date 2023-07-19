@@ -10,6 +10,7 @@
 
 .item2 img{
     width: 500px;
+    
 }
 .createPostHead{
     width: 500px;
@@ -115,6 +116,7 @@ label{
 
 @media screen and (max-width: 900px) {
     .formWrapper{
+        
         flex-direction: column-reverse;
     }
     .createPostHead{
@@ -146,7 +148,7 @@ label{
         font-size: 15px;
     }
     .item2 img{
-        width: 350px;
+        width: 270px;
     }
     .formHead h1{
         font-size: 1.7rem;

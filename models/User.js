@@ -3,10 +3,7 @@ const Schema = mongoose.Schema;
 var uniqueValidator = require('mongoose-unique-validator');
 const bcrypt = require('bcrypt')
 const UserSchema = new Schema({
-    name:{
-        type :String ,
-        required: [true, 'Name field can not be blank']
-    },
+    
     username: {
         type: String,
         required: [true, 'Provide username'],

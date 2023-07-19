@@ -5,14 +5,14 @@ const storeUser = require("./storeUser")
 module.exports = (req, res) =>{
     var username = ""
     var password = ""
-    var name=""
+   
    
    
     const data = req.flash('data')[0];
     if(typeof data != "undefined"){
         username = data.username
         password = toString((data.password));
-        name =  data.name
+       
       
         
        
@@ -23,7 +23,7 @@ module.exports = (req, res) =>{
         errors: req.flash('validationErrors'),
         username: username,
         password: password,
-        name : name,
+       
         
        
         

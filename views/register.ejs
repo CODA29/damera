@@ -36,11 +36,7 @@
                     
                     
                 
-                <div class="formPart">
-                    <label for="name"> Name </label> <br>
-                    <input type="text" name="name" class="userInpt" id="name" value="<%=name %>" placeholder="Enter your name" required>
-                    <span>*</span>
-                </div>
+                
                 <div class="formPart">
                     <label for="username"> Username </label> <br>
                     <input type="text" name="username" class="userInpt" id="username" value="<%=username %>" placeholder="Create a username" required>
@@ -59,8 +55,8 @@
                 
             </form>
         </div>
-        <div class="item2" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="/img/Collaboration.png" alt="illustration of people working">
+        <div class="item2" data-aos="slide-right" data-aos-duration="1000">
+            <img src="/img/signup.png" alt="illustration of people working">
 
         </div>
 
@@ -77,10 +73,16 @@
         <!--Page footer-->
     <%- include('layouts/footer'); -%>
 
+        <!--Page Scripts-->
+     <%- include('layouts/scripts'); -%>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/40319190.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
     </div>
 
-    <!--Page Scripts-->
-    <%- include('layouts/scripts'); -%>
+   
 
 
 
