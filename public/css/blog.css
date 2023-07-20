@@ -12,7 +12,7 @@
     
 }
 .recentHeader{
-    width: 60%;
+    max-width: 800px;
     margin: auto;
     border-bottom: 1px solid black;
     margin-top: 5rem;
