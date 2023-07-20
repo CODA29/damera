@@ -31,7 +31,7 @@
 .spacer{
    
     width: 100%;
-    height: 3rem;
+    height: 10rem;
     
 }
 
@@ -76,7 +76,7 @@
 .fab {
     
     font-size: 1.7rem;
-    color: #578d05;
+    color: #af5b07;
     padding: 7px;
     
 }
@@ -111,14 +111,10 @@
         --fa-bounce-land-scale-x: 1; 
         --fa-bounce-land-scale-y: 1; 
         --fa-bounce-rebound: 0;
-        color: #578d05;
+        color:#af5b07;
         
 }
    
-    
-
-
-
 
 
 @media screen and (max-width: 900px){
@@ -145,7 +141,9 @@
         width: 30px;
      
     }
-    
+    .spacer{
+        height: 4rem;
+    }
     
     .copy{
 

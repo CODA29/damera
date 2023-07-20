@@ -6,6 +6,7 @@
     flex-direction: row-reverse;
     align-items:center ;
     justify-content: center;
+    padding: 3rem;
     
 
 }
@@ -48,7 +49,7 @@
 }
 .contribute a{
     
-    background: #578d05;
+    background: #af5b07;
     color: white;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -60,12 +61,16 @@
 
 /*illustraion*/
 .illustration img{
-    width: 650px;
+    width: 520px;
+    border-radius: 1rem;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.235));
+
 }
 @media screen and (max-width: 900px){
     .introContainer{
         flex-direction: column-reverse;
         width: 100%;
+        padding: unset;
     }
     .contribute{
         justify-content: center;
@@ -76,7 +81,8 @@
         font-size: 15px;
     }
     .illustration img{
-        width: 350px;
+        width: 340px;
+        filter: unset;
     }
     .intro{
         width: 85%;
