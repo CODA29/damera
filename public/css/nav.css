@@ -55,6 +55,7 @@
 .icon{
     color:  #578d05;
     font-size: 1.7em;   
+    cursor: pointer;
 }
 .burgerMenu{
     width: 100%;
@@ -91,6 +92,7 @@
     }
     .burger{
         display: block;
+
     }
     
 }
