@@ -18,15 +18,15 @@
 }
 .dameraLogo img{
     width: 100px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.533));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.323));
 
 }
 .dameraLogo a{
-   
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.288));
     font-weight: 500;
     cursor: pointer;
     font-size: 1.5rem;
-    color:  #af5b07;
+    color:  #454545;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
