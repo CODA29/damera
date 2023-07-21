@@ -7,17 +7,19 @@
     
     <div class="display-header" style="background: url('<%= blogpost.image %>') fixed top; background-size: 100vh">
         <div class="nav">
-            <div class="logo">
+            <div class="link">
+                <a href="/blog" aria-label="Home button"> < BACK </a>
+                
+            </div>
+            <div class="link">
+                <% if(loggedIn) { %> 
+                    <a href="/auth/logout"> LOG OUT </a>
+                   <% } 
+               %>
                 <!-- <a href="/"><img src="../img/TransparentDameraLogo.png" alt="logo"></a>
                 <a href="/">DAMERA <span class="creatives">CREATIVES</span></a> -->
             </div>
-            <div class="link">
-                <a href="/">HOME</a>
-                <% if(loggedIn) { %> 
-                     <a href="/auth/logout"> LOG OUT </a>
-                    <% } 
-                %>
-            </div>
+            
         </div>
         <div class="display-header sub">
             <h1 class="post-title"><%= blogpost.title %></h1>
