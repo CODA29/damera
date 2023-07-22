@@ -126,7 +126,7 @@ label{
         box-shadow: unset;
         flex-direction: column-reverse;
         background: unset;
-        gap: 3rem;
+        gap: 2rem;
     }
     .createPostHead{
         width: 350px;
