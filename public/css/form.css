@@ -1,18 +1,22 @@
 .formWrapper{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    gap: 3rem;
-}
-
-.item2 img{
-    width: 520px;
     border-radius: 1rem;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.235));
-
+    box-shadow: 0px 10px 15px rgba(160, 153, 153, 0.498);
+}
+.item1{
+    padding: 2rem;
+}
+.item2 img{
+    width: 600px;
+    
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  
 }
 .createPostHead{
     width: 500px;
@@ -31,6 +35,7 @@
 
 }
 .formHead h1{
+
     font-size: 2.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
@@ -47,7 +52,7 @@
 }
 .signupMessage a{
     cursor: pointer;
-    color: #af5b07;
+    color: #507814;
 }
 label{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -74,16 +79,16 @@ label{
 .userBtn{
      padding: 20px 20px;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     background: #af5b07;
+     background: #507814;
      color: white;
      font-size: 17px;
      cursor: pointer;
      border-radius: 5px;
      border: none;
-   
+     
 }
 .formPart > span {
-	color: #af5b07;
+	color: #507814;
     margin-left: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
@@ -98,7 +103,7 @@ label{
     max-width: 600px;
     padding: 1rem;
     border-radius: 5px;
-    background: #af5b07;
+    background: #507814;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,10 +121,12 @@ label{
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .formWrapper{
-        
+        box-shadow: unset;
         flex-direction: column-reverse;
+        background: unset;
+        gap: 3rem;
     }
     .createPostHead{
         width: 350px;
@@ -152,6 +159,7 @@ label{
     .item2 img{
         width: 340px;
         filter: unset;
+        border-radius: 1rem;
     }
     .formHead h1{
         font-size: 1.7rem;

@@ -5,8 +5,8 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 2rem;
-    
-    
+    border-bottom: 1px solid  #f7f6f6;
+   
 }
 .dameraLogo{
     
@@ -18,20 +18,20 @@
 }
 .dameraLogo img{
     width: 100px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.323));
+    filter: drop-shadow(5px 5px 5px rgba(121, 120, 120, 0.323));
 
 }
 .dameraLogo a{
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.288));
+   
     font-weight: 500;
     cursor: pointer;
     font-size: 1.5rem;
-    color:  #454545;
+    color: #507814;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .dameraLogo .creatives{
-    color:  #454545;
+    color:  #507814;
 }
 .pages{
     
