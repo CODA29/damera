@@ -83,6 +83,7 @@
     .illustration img{
         width: 340px;
         filter: unset;
+        border-radius: .5rem;
     }
     .intro{
         width: 85%;
