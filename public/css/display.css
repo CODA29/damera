@@ -3,13 +3,14 @@
 }
 
 .nav{
+    padding: 1rem;
     background-color: rgba(24, 24, 24, 0.743);
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    
 }
 
 .logo{
