@@ -7,7 +7,7 @@ New users must register to gain access to share their posts.
 
 Once registered, the app will redirect the user to the blog page. 
 
-The blog page has a button named "contribute." Click this button to log in with your credentials and start writing.
+The blog page has a button named "Start Writing." Click this button to log in with your credentials and start writing.
 
 Writers are expected to provide these three pieces of information:
 
