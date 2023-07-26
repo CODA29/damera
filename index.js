@@ -55,42 +55,11 @@ app.get('/portfolio', portfolioController)
 app.get('/blog', blogController)
 app.get('/sucess/', sucessController)
 app.post('/posts/store', storePostController)
-app.get('/display/:id', getPostController)
+app.post('/posts/comment/:id', getPostController.addComment)
+app.get('/display/:id', getPostController.getPost)
 app.get('/auth/register', redirectIfAuthenticatedMiddleware, newUserController)
 app.get('/auth/login', loginController)
 app.post('/users/login',loginUserController)
 app.get('/auth/logout', logoutController)
 app.use((req, res) => res.render('notfound'));
-// Add this after the existing routes
-app.post('/posts/comment/:id', (req, res) => {
-    const commentText = req.body.comment;
-    const blogPostId = req.params.id;
-    const userId = req.session.userId;
 
-    if (!commentText) {
-        req.flash('error', 'Comment cannot be empty.');
-        return res.redirect(`/display/${blogPostId}`);
-    }
-
-    BlogPost.findById(blogPostId, (err, blogpost) => {
-        if (err || !blogpost) {
-            req.flash('error', 'Blog post not found.');
-            return res.redirect('/blog');
-        }
-
-        blogpost.comments.push({
-            text: commentText,
-            userid: userId
-        });
-
-        blogpost.save((err, updatedBlogPost) => {
-            if (err) {
-                req.flash('error', 'Error adding comment. Please try again.');
-                return res.redirect(`/display/${blogPostId}`);
-            }
-
-            req.flash('success', 'Comment added successfully.');
-            res.redirect(`/display/${blogPostId}`);
-        });
-    });
-});

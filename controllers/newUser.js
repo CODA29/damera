@@ -1,7 +1,3 @@
-const User = require("../models/User")
-const storeUser = require("./storeUser")
-
-
 module.exports = (req, res) =>{
     var username = ""
     var password = ""

@@ -1,6 +1,6 @@
 const User = require('../models/User.js')
-const path = require('path')
-const Alert = require("../models/Form")
+
+
 module.exports = (req,res) => {
     User.create(req.body, (error, user) =>{
         if(error){
@@ -12,7 +12,7 @@ module.exports = (req,res) => {
             return res.redirect('/auth/register')
         }else{
 
-            const successMessage = 'Account created successfully!';
+            
             //res.redirect(`/success?message=${encodeURIComponent(successMessage)}`);
             res.redirect('/sucess')
            
