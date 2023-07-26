@@ -8,15 +8,16 @@
     <!--Page Header-->
     <%- include('layouts/navbar'); -%>
 
-    <div class="spacer"> </div>
-
-    <div class="blogIntro">
-        <h2> UNLEASH YOUR IMAGINATION </h2>
-        <div class="contribute" data-aos="slide-up" data-aos-duration="2000">
-            <a href="/auth/login"> Start Writing  </a>
+    <% if(loggedIn) { %> 
+        <div class="blogIntro">
+            <h2> UNLEASH YOUR IMAGINATION </h2>
+            <div class="contribute" data-aos="slide-up" data-aos-duration="2000">
+                <a href="/posts/new"> Start Writing  </a>
+            </div>
+    
         </div>
-
-    </div>
+       <% } 
+    %>
 
     <div class="recentHeader">
         <h2>Recent Posts</h2>
@@ -50,6 +51,8 @@
 
         <% } %> 
     </div>
+    
+    
     
     
 

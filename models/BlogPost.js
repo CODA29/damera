@@ -1,18 +1,6 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
-
-const CommentSchema = new Schema({
-    text: String,
-    userid: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true
-    },
-    datePosted: {
-        type: Date,
-        default: new Date()
-    }
-});
+const Comment = require('./Comment');
 
 const BlogPostSchema = new Schema({
     title: String,
@@ -27,7 +15,7 @@ const BlogPostSchema = new Schema({
         default: new Date()
     },
     image: String,
-    comments: [CommentSchema] // field for storing comments
+    comments: [Comment.schema] // Use the Comment schema for comments
 
 });
 const BlogPost = mongoose.model('BlogPost', BlogPostSchema);

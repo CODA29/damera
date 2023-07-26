@@ -26,7 +26,7 @@ module.exports = (req, res) => {
             if(same){
                 // If passwords match, set the session and redirect to create new post page 
                 req.session.userId = user._id
-                res.redirect('/posts/new')
+                res.redirect('/blog')
             }else{
                 // If passwords don't match, display an error message on the login page
                 return res.render('login', { error: 'Invalid username or password.' });

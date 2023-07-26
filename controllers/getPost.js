@@ -1,4 +1,5 @@
 const BlogPost = require('../models/BlogPost.js')
+const Comment = require('../models/Comment.js')
 const getPost = async (req, res) => {
     try {
         const blogpostId = req.params.id;
@@ -35,6 +36,11 @@ const addComment = async (req, res) => {
             req.flash('error', 'Comment cannot be empty.');
             return res.redirect(`/display/${blogPostId}`);
         }
+        const comment = new Comment({
+            text: commentText,
+            userid: userId,
+        });
+        await comment.save();
 
         const blogPost = await BlogPost.findById(blogPostId);
         if (!blogPost) {
@@ -42,12 +48,10 @@ const addComment = async (req, res) => {
             return res.redirect('/blog');
         }
 
-        blogPost.comments.push({
-            text: commentText,
-            userid: userId
-        });
-
+        blogPost.comments.push(comment);
         await blogPost.save();
+
+        
         req.flash('success', 'Comment added successfully.');
         res.redirect(`/display/${blogPostId}`);
     } catch (error) {

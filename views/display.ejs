@@ -36,6 +36,28 @@
         
     </div>
     <div class="comment">
+
+        <% if (blogpost.comments.length > 0) { %>
+            <h3>Comments</h3>
+            <ul>
+                <% blogpost.comments.forEach(comment => { %>
+                    <li>
+                        <strong><%= comment.userid.username %></strong>: <br> <%= comment.text %> <br>
+                        <!-- Add delete button (visible to the comment author) -->
+                        <% if (loggedIn && comment.userid._id.toString() === loggedIn.toString()) { %>
+                            <form method="POST" action="/comments/<%= comment._id %>/delete">
+                                <button type="submit">Delete</button>
+                            </form>
+                        <% } %>
+                    
+                    </li>
+                <% }); %>
+            </ul>
+        <% } else { %>
+            <p>No comments yet.</p>
+            <% } 
+        %>
+
         <% if (loggedIn) { %>
             <h3>Add a Comment:</h3>
             <form method="POST" action="/posts/comment/<%= blogpost._id %>" class="commentForm">
@@ -44,18 +66,6 @@
             </form>
         <% } else { %>
             <p>Please <a href="/auth/login">log in</a> to leave a comment.</p>
-            <% } 
-        %>
-    
-        <% if (blogpost.comments.length > 0) { %>
-            <h3>Comments:</h3>
-            <ul>
-                <% blogpost.comments.forEach(comment => { %>
-                    <li><strong><%= comment.userid.username %></strong>: <%= comment.text %></li>
-                <% }); %>
-            </ul>
-        <% } else { %>
-            <p>No comments yet.</p>
             <% } 
         %>
     </div>

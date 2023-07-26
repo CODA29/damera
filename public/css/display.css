@@ -1,148 +1,164 @@
-.display-header{
-    overflow: hidden;
+.display-header {
+  overflow: hidden;
 }
 
-.nav{
-    padding: 2rem;
-    background-color: rgba(24, 24, 24, 0.743);
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    
+.nav {
+  padding: 2rem;
+  background-color: rgba(24, 24, 24, 0.743);
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.logo a{
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color:  #578d05;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.logo a {
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #578d05;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.logo .creatives{
-    color: rgb(174, 149, 5);
+.logo .creatives {
+  color: rgb(174, 149, 5);
 }
-.logo img{
-    width: 100px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.605));
+.logo img {
+  width: 100px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.605));
 }
-.link{
-    display: inline-block;
-    
+.link {
+  display: inline-block;
 }
-.link a{
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.link a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.link a:hover{
-    color: white;
+.link a:hover {
+  color: white;
 }
-.sub{
-    background-color: rgba(24, 24, 24, 0.743);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    padding: 15rem 0;
+.sub {
+  background-color: rgba(24, 24, 24, 0.743);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 15rem 0;
 }
-.sub h1{
-    font-weight: 800;
-    font-size: 3.2rem;
-    letter-spacing: .2rem;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.sub h1 {
+  font-weight: 800;
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.sub span{
-    letter-spacing: .1rem;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.sub span {
+  letter-spacing: 0.1rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.post-body{
-    max-width: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7rem;
+.post-body {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
 }
-.post-body p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5em;
-    line-height: 1.7em;
-   
-   
+.post-body p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.7em;
 }
-.comment{
-    max-width: 700px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-    border-top: 1px solid  #c9c8c8;
-    padding: 1rem;
+.comment {
+  max-width: 700px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  border-top: 1px solid #c9c8c8;
+  padding: 1rem;
 }
-.comment p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.7em;
-    font-size: 1.1rem;
+.comment p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.7em;
+  font-size: 1.1rem;
+  
 }
-.comment a{
-    cursor: pointer;
-    color: #507814;
+.comment a {
+  cursor: pointer;
+  color: #507814;
 }
-.comment h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.7em;
-    font-size: 1.1rem;
+.comment h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.7em;
+  font-size: 1.1rem;
 }
-.commentForm{
-    width: 100%;
+.comment ul {
+  list-style: none;
+  border: 1px solid #e7e7e7;
+  border-radius: 0.5rem;
+  padding: .5rem;
+  margin-bottom: 1.5rem;
 }
-.commentForm textarea{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.7em;
-    font-size: 1rem;
-    padding: .5rem;
-    width: 100%;
+.comment li {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #e7e7e7;
+  margin: .7rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.commentForm button{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1rem;
-    padding: .5rem;
-    cursor: pointer;
-    background: #507814;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    margin: 1rem 0;
+.comment strong {
+  font-size: 0.9rem;
+  color: #507814;
+}
+.commentForm {
+  width: 100%;
+}
+.commentForm textarea {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.7em;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.commentForm button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: .8rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: #507814;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin: 1rem 0;
 }
 @media screen and (max-width: 800px) {
-    .nav{
-        justify-content: space-between;
-        padding: 1.5rem;
-    }
-    .sub h1{
-        font-size: 1.7rem;
-    }
-    .post-body, .comment{
-        width: 85%;
-    }
-    .logo a:nth-child(even){
-        display: none;
-    }
-    .link a{
-        font-size: 1rem;
-    }
+  .nav {
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  .sub h1 {
+    font-size: 1.7rem;
+  }
+  .post-body,
+  .comment {
+    width: 85%;
+  }
+  .logo a:nth-child(even) {
+    display: none;
+  }
+  .link a {
+    font-size: 1rem;
+  }
 }
