@@ -7,13 +7,18 @@ const UserSchema = new Schema({
     username: {
         type: String,
         required: [true, 'Provide username'],
-        unique: [true, 'Username taken, try a different username'],
+        unique: [true],
     },
     password: {
         type: String,
         required: [true, 'Provide password']
     },
-    
+    resetPasswordToken:{
+        type :String
+    },
+    resetPasswordTokenExpiry:{
+        type:Date
+    }
 });
 UserSchema.plugin(uniqueValidator);
 UserSchema.pre('save', function(next){

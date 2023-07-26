@@ -16,27 +16,16 @@
             <div class="formHead">
                 <h1> SIGN UP </h1>
             </div>
+            <% if(errors != null && errors.length > 0) { %>  
+                <div class="error_display">
+                    <p> Username taken. Try a different one! </p>
+                </div>
+                
+                <%} 
+                
+            %> 
             <form action="/users/register" class="form" id="form" method="POST" enctype="multipart/form-data" >
 
-    
-
-                <% if(errors != null && errors.length > 0) { %>  
-                    <div class="error_display">
-                        <ul>
-                            <% for (var i = 0; i < errors.length; i++){ %> 
-                                <li> <%= errors[i] %> </li>
-                                <%} %>
-                        </ul>
-                
-                    </div>
-                    
-                    <%} 
-                    
-                %> 
-                    
-                    
-                
-                
                 <div class="formPart">
                     <label for="username"> Username </label> <br>
                     <input type="text" name="username" class="userInpt" id="username" value="<%=username %>" placeholder="Create a username" required>
