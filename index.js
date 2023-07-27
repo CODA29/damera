@@ -41,13 +41,14 @@ app.use((req,res,next)=>{
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(flash());
-mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true })
-.then(()=>console.log("Connected To Database"))
-.catch((error)=> console.error('Error connecting to MongoDB:', error))
 let port = process.env.PORT || 4000;
 app.listen(port, ()=>{
   console.log('App listening... ')
 }) 
+mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser: true })
+.then(()=>console.log("Connected To Database"))
+.catch((error)=> console.error('Error connecting to MongoDB:', error))
+
 app.post('/users/register', storeUserController)
 app.post('/messages/send', storeMessageController)
 app.get('/posts/new', newPostController)
