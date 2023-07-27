@@ -24,7 +24,7 @@ const redirectIfAuthenticatedMiddleware = require('./views/middleware/redirectIf
 const logoutController = require('./controllers/logout')
 const flash = require('connect-flash');
 app.set('view engine','ejs')
-//global.loggedIn = null;
+global.loggedIn = null;
 app.use(express.static('public'))
 app.use(fileUpload())
 app.use('/posts/store', validateMiddleware)
@@ -41,7 +41,7 @@ app.use((req,res,next)=>{
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(flash());
-mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true })
 .then(()=>console.log("Connected To Database"))
 .catch((error)=> console.error('Error connecting to MongoDB:', error))
 let port = process.env.PORT || 4000;
