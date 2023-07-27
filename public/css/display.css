@@ -111,6 +111,7 @@
   margin-bottom: 1.5rem;
 }
 .comment li {
+  font-size: 1.1rem;
   border-radius: 0.5rem;
   padding: 1rem;
   border: 1px solid #e7e7e7;
@@ -118,7 +119,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .comment strong {
-  font-size: 0.9rem;
+ 
   color: #507814;
 }
 .commentForm {
@@ -154,6 +155,9 @@
   .post-body,
   .comment {
     width: 85%;
+  }
+  .comment li {
+    font-size: 1rem;
   }
   .logo a:nth-child(even) {
     display: none;
