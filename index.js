@@ -48,7 +48,6 @@ let port = process.env.PORT || 4000;
 app.listen(port, ()=>{
   console.log('App listening... ')
 }) 
-
 app.post('/users/register', storeUserController)
 app.post('/messages/send', storeMessageController)
 app.get('/posts/new', newPostController)
