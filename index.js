@@ -60,7 +60,7 @@ app.post('/posts/comment/:id', getPostController.addComment)
 app.get('/display/:id', getPostController.getPost)
 app.post('/comments/:id/delete', commentController.deleteComment)
 app.get('/auth/register', redirectIfAuthenticatedMiddleware, newUserController)
-app.get('/auth/login', loginController)
+app.get('/auth/login', redirectIfAuthenticatedMiddleware, loginController)
 app.post('/users/login',loginUserController)
 app.get('/auth/logout', logoutController)
 app.use((req, res) => res.render('notfound'));

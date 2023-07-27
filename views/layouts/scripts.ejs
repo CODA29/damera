@@ -24,3 +24,19 @@
   document.getElementById("year").innerHTML = new Date().getFullYear();
  </script>
 
+<!-- toggle password button  -->
+<script>
+  function togglepass(){
+      const password = document.getElementById('password');
+      const togglepassword = document.getElementById('togglePassword');
+
+      if (password.type === 'password'){
+          password.type='text';
+          togglepassword.innerHTML='<i class="fas fa-eye"></i>';
+      }
+      else{
+          password.type ='password' ;
+          togglepassword.innerHTML= '<i class="fas fa-eye-slash">';
+      }
+  }
+</script>

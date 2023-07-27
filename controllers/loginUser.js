@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt')
 const User = require('../models/User')
 module.exports = (req, res) => {
     const { username, password } = req.body;
-
+    const referer = req.headers.referer || '/';
 
     User.findOne({username:username}, (error,user) =>{
         if(error){
@@ -26,7 +26,15 @@ module.exports = (req, res) => {
             if(same){
                 // If passwords match, set the session and redirect to create new post page 
                 req.session.userId = user._id
-                res.redirect('/blog')
+                
+                if(referer.includes('/auth/login')){
+
+                    return res.redirect('/blog')  //If it was from /auth/login then go to the blog page
+                }
+                
+                res.redirect(referer); //Redirect the user back to the previous page
+
+
             }else{
                 // If passwords don't match, display an error message on the login page
                 return res.render('login', { error: 'Invalid username or password.' });
