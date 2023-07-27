@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt')
 const User = require('../models/User')
 module.exports = (req, res) => {
     const { username, password } = req.body;
-    const referer = req.headers.referer || '/';
+    
 
     User.findOne({username:username}, (error,user) =>{
         if(error){
@@ -31,7 +31,7 @@ module.exports = (req, res) => {
 
                     return res.redirect('/blog')  //If it was from /auth/login then go to the blog page
                 }
-                
+                const referer = req.headers.referer || '/';
                 res.redirect(referer); //Redirect the user back to the previous page
 
 
