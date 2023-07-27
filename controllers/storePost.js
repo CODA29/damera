@@ -3,9 +3,10 @@ const path = require('path')
 module.exports = (req,res)=>{
 
     let image = req.files.image;
-    console.log('Image:', image)
+    console.log('Image:', image);
+    const destinationPath = path.resolve(__dirname, '..', 'public', 'img');
     image.mv(
-        path.resolve(__dirname, '..', 'public', 'img', image.name), 
+        path.join(destinationPath, image.name), 
         async (error) =>{
         await BlogPost.create({
             ...req.body, 
