@@ -128,19 +128,19 @@
 .commentForm textarea {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.7em;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0.5rem;
   width: 100%;
   border-radius: 0.5rem;
 }
 .commentForm button {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: .8rem;
+  font-size: 1rem;
   padding: 0.5rem;
   cursor: pointer;
   background: #507814;
   color: white;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   border: none;
   margin: 1rem 0;
 }
@@ -152,12 +152,14 @@
   .sub h1 {
     font-size: 1.7rem;
   }
-  .post-body,
-  .comment {
+  .post-body, .comment {
     width: 85%;
   }
-  .comment li {
+  .comment li, .commentForm textarea {
     font-size: 1rem;
+  }
+  .commentForm button {
+    font-size: .8rem;
   }
   .logo a:nth-child(even) {
     display: none;
