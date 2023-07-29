@@ -16,11 +16,14 @@ const getPost = async (req, res) => {
             req.flash('error', 'Blog post not found.');
             return res.redirect('/blog');
         }
+        console.log("loggedIn:", req.session.userId ? true : false); // Add this line
 
         res.render('display', {
             blogpost,
             loggedIn: req.session.userId ? true : false // Pass the loggedIn status to the view
+            
         });
+       
     } catch (error) {
         req.flash('error', 'Error fetching blog post.');
         res.redirect('/blog');
@@ -40,6 +43,8 @@ const addComment = async (req, res) => {
             text: commentText,
             userid: userId,
         });
+        
+
         await comment.save();
 
         const blogPost = await BlogPost.findById(blogPostId);

@@ -34,10 +34,10 @@ app.use(expressSession({
     saveUninitialized: true
 }))
 // Middleware to set the loggedIn variable
-app.use((req,res,next)=>{
-    res.locals.loggedIn = req.session.userId ? req.session.userId.toString() : null;
-    next();
-})
+app.use((req, res, next) => {
+  res.locals.loggedIn = req.session.userId ? req.session.userId.toString() : null;
+  next();
+});
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(flash());
@@ -59,7 +59,7 @@ app.get('/sucess/', sucessController)
 app.post('/posts/store', storePostController)
 app.post('/posts/comment/:id', getPostController.addComment)
 app.get('/display/:id', getPostController.getPost)
-app.post('/comments/:id/delete', commentController.deleteComment)
+app.post('/comments/:id/delete',redirectIfAuthenticatedMiddleware, commentController)
 app.get('/auth/register', redirectIfAuthenticatedMiddleware, newUserController)
 app.get('/auth/login', redirectIfAuthenticatedMiddleware, loginController)
 app.post('/users/login',loginUserController)

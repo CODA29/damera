@@ -44,12 +44,11 @@
                     <li>
                         <strong><%= comment.userid.username %></strong> <br> <%= comment.text %> <br>
                         <!-- Add delete button (visible to the comment author) -->
-                        <% if (loggedIn && comment.userid._id.toString() === loggedIn.toString()) { %>
+                        <% if (loggedIn && comment.userid._id.toString() === loggedIn) { %>
                             <form method="POST" action="/comments/<%= comment._id %>/delete">
                                 <button type="submit">Delete</button>
                             </form>
                         <% } %>
-                    
                     </li>
                 <% }); %>
             </ul>

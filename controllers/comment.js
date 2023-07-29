@@ -1,41 +1,45 @@
 const Comment = require('../models/Comment.js');
 const BlogPost = require('../models/BlogPost.js');
 
-const deleteComment = async (req, res) => {
+module.exports = async (req, res) => {
+    const referer = req.headers.referer || '/';
     try {
         const commentId = req.params.id;
+        const userId = req.session.userId;
+        
+
         const comment = await Comment.findById(commentId);
 
-        if (!comment) {
-            req.flash('error', 'Comment not found.');
-            return res.redirect('/blog');
+        if (!comment || comment.userid.toString() !== userId) {
+            
+            return res.status(403).json({error: 'You are not authorized to delete this comment'});
         }
 
-        const blogPost = await BlogPost.findById(comment.blogpost);
-        if (!blogPost) {
+        await comment.remove();
+
+        const deletedComment = await Comment.findByIdAndRemove(commentId);
+        
+        
+        const blogpostId = deletedComment.blogpost;
+        const updatedBlogPost = await BlogPost.findByIdAndUpdate(
+            blogpostId,
+            { $pull: { comments: commentId } },
+            { new: true } // Return the updated document after the update
+          );
+      
+          if (!updatedBlogPost) {
+            // Handle the case when the blog post is not found after the comment deletion
             req.flash('error', 'Blog post not found.');
             return res.redirect('/blog');
-        }
+          }
 
-        // Check if the current user is the author of the comment
-        if (req.session.userId && comment.userid.toString() === req.session.userId) {
-            await comment.remove();
-            // Remove the comment from the BlogPost's comments array
-            blogPost.comments = blogPost.comments.filter((cmt) => cmt.toString() !== commentId);
-            await blogPost.save();
-
-            req.flash('success', 'Comment deleted successfully.');
-        } else {
-            req.flash('error', 'You are not authorized to delete this comment.');
-        }
-
-        res.redirect(`/display/${blogPost._id}`);
+        // Return a success response
+        //return res.status(200).json({ message: 'Comment deleted successfully.' });
+        res.redirect(`/display/${blogpostId}`);
+        
     } catch (error) {
-        req.flash('error', 'Error deleting comment. Please try again.');
-        res.redirect('/blog');
+        return res.status(500).json({ error: 'An error occurred while deleting the comment.' });
     }
+    
 };
 
-module.exports = {
-    deleteComment,
-};
