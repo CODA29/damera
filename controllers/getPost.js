@@ -10,7 +10,7 @@ const getPost = async (req, res) => {
                 select: 'username' // Only fetch the 'username' field of the related user
             }
         });
-
+        const blogposts = await BlogPost.find({}).populate('userid');
 
         if (!blogpost) {
             req.flash('error', 'Blog post not found.');

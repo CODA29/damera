@@ -25,29 +25,30 @@
     
     <div class="post-container">
         <% for (var i = 0; i < blogposts.length; i++) { %> 
-            
-            <div class="post-preview" data-aos="zoom-in" data-aos-duration="2000" >
-                
-                    <div>
-                        <a href="/display/<%= blogposts[i]._id %>"><img src=" <%= blogposts[i].image %> " alt=""> </a>
-                        <h2 class="post-title"><%= blogposts[i].title %></h2> 
-                    </div>
-                    <div>
-                        
+            <a href="/display/<%= blogposts[i]._id %>">
+                <div class="post-preview" data-aos="zoom-in" data-aos-duration="2000" >
+                    
+                        <div>
+                            <img src="/img/blog2.WebP" alt="illustration of people working">
+                            
+                            <h2 class="post-title"><%= blogposts[i].title %></h2> 
+                            <p> By:  <%=blogposts[i].userid.username %> 
+                                - <%=blogposts[i].datePosted.toDateString() %>
+                            </p>
+                        </div>
+                        <div>
+                            
 
+                            
+                            
+                            
                         
-                    <span> By:  <%=blogposts[i].userid.username %> 
-                        - <%=blogposts[i].datePosted.toDateString() %>
-                    </span>
-                    
-                   
-                    <br><br><br>
-                    
-                    <a href="/display/<%= blogposts[i]._id %>">Read Post</a>
-        
-                    </div>
-                    
-            </div>
+                            
+            
+                        </div>
+                        
+                </div>
+            </a>
 
         <% } %> 
     </div>

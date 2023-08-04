@@ -5,7 +5,7 @@
 <body>
     
     
-    <div class="display-header" style="background: url('<%= blogpost.image %>') fixed top; background-size: 100vh">
+    <div class="display-header" style="background: url('../img/blog2.WebP') fixed top; background-size: 100vh">
         <div class="nav">
             <div class="link">
                 <a href="/blog" aria-label="Home button"> < BACK </a>
@@ -22,8 +22,8 @@
         </div>
         <div class="display-header sub">
             <h1 class="post-title"><%= blogpost.title %></h1>
-            <span> By:  <%=blogpost.userid.username %> 
-                <%=blogpost.datePosted.toDateString() %>
+            <span> <!--By:  <%= blogpost.userid.username %> -->
+                  <%=blogpost.datePosted.toDateString() %>
            </span> 
         </div>
         
