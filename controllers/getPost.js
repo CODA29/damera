@@ -9,7 +9,7 @@ const getPost = async (req, res) => {
                 path:'userid',
                 select: 'username' // Only fetch the 'username' field of the related user
             }
-        });
+        }).populate('userid', 'username'); // Add this line to populate the 'userid' field
         const blogposts = await BlogPost.find({}).populate('userid');
 
         if (!blogpost) {
