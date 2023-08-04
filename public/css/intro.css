@@ -15,7 +15,7 @@
     
     width: 80%;
     margin: auto;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 10px;
    
    
@@ -56,6 +56,8 @@
     font-size: 20px;
     padding: 1rem;
     border-radius: 5px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.235));
+
 }
 
 
@@ -63,8 +65,7 @@
 .illustration img{
     width: 520px;
     border-radius: 1rem;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.235));
-
+    
 }
 @media screen and (max-width: 1200px){
     .introContainer{

@@ -6,7 +6,7 @@
     align-items: center;
     padding-top: 2rem;
     border-bottom: 1px solid  #f7f6f6;
-   
+    
 }
 .dameraLogo{
     
@@ -25,7 +25,7 @@
    
     font-weight: 500;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: .7rem;
     color: #507814;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -43,7 +43,7 @@
 .pages a{
     
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #454545;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -53,7 +53,7 @@
     display: none;
 }
 .icon{
-    color: #454545;
+    color: #507814;
     font-size: 1.7em;   
     cursor: pointer;
 }
@@ -72,7 +72,7 @@
     text-align: center;
 }
 .burgerMenu a:hover{
-    background:  #454545;
+    background:  #7c7a7a;
     
 }
 
@@ -84,9 +84,7 @@
         padding: 1.5rem;
     }
 
-    .dameraLogo a{
-        font-size: 1rem;
-    }
+    
     .pages{
         display: none;
     }

@@ -46,14 +46,18 @@
     border-bottom: .5px solid gray;
     padding-bottom: 2rem;
     
+    padding: 1rem;
+    
 }
 
 .post-preview a{
+    
     color:  #507814;
-    font-size: 1.3rem;  
+    font-size: 1.2rem;  
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .post-preview h2{
+   
     font-size: 1.7rem;
     font-weight: 400;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -63,6 +67,7 @@
 .post-preview span{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 400;
+    
 }
 
 .post-preview img{
