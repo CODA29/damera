@@ -84,7 +84,9 @@
         justify-content: space-between;
         padding: 1.5rem;
     }
-
+    .dameraLogo a{
+        font-size: .7rem;
+    }
     
     .pages{
         display: none;
