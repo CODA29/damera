@@ -14,14 +14,14 @@
 .recentHeader{
     max-width: 800px;
     margin: auto;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(177, 177, 177);
     margin-top: 5rem;
     
 }
 .recentHeader h2{
-    font-weight: 300;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
 }
 /* Controller for the Literature page */
 .post-container{
@@ -97,7 +97,14 @@
     .post-preview{
        width: 350px;
     }
+    .post-preview h2{
+        font-size: 1.3rem;
+    }
+    .post-preview p{
+        font-size: 1rem;
+    }
     .recentHeader{
         width: 77%;
     }
+
 }
