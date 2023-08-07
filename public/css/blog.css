@@ -9,6 +9,7 @@
     font-weight: 400;
     font-size: 2.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
     
 }
 .recentHeader{
@@ -17,11 +18,12 @@
     border-bottom: 1px solid rgb(177, 177, 177);
     margin-top: 5rem;
     
+    
 }
-.recentHeader h2{
-    font-weight: 200;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+.recentHeader h3{
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #454545;
 }
 /* Controller for the Literature page */
 .post-container{
@@ -92,7 +94,7 @@
 
 @media screen and (max-width: 900px){
     .blogIntro h2{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .post-preview{
        width: 350px;
