@@ -63,10 +63,12 @@
 }
 .burgerMenu{
     width: 100%;
-    background: #454545;
+    background: #454545ef;
     display: none;
-    position: relative;
+    position: fixed;
+    z-index: 1;
     top: 8rem;
+   
     
 }   
 .burgerMenu a{
@@ -79,7 +81,7 @@
     text-align: center;
 }
 .burgerMenu a:hover{
-    background:  #7c7a7a;
+    background: #454545;
     
 }
 
