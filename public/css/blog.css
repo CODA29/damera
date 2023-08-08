@@ -33,7 +33,7 @@
 }
 /* Controller for the Literature page */
 .post-container{
-    width: 85%;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
