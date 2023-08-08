@@ -47,9 +47,7 @@ body{
     background: #fafafa;
     position: relative;
     top: 7rem;
-    
-   
-   
+    border-top: .5px solid #e2e2e2;
 }
 
 /* Controller for the social media icons */

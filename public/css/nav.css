@@ -7,6 +7,7 @@
     padding-top: 2rem;
     position: fixed;
     background: #fafafa;
+    border-bottom: .5px solid #e2e2e2;
     top: 0;
     z-index: 1;
     
@@ -68,7 +69,7 @@
     display: none;
     position: fixed;
     z-index: 1;
-    top: 8rem;
+    top: 7rem;
    
     
 }   
@@ -92,6 +93,7 @@
         
         justify-content: space-between;
         padding: 1rem;
+        border-bottom: unset;
     }
     .dameraLogo img{
         width: 80px;
