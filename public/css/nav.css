@@ -93,8 +93,11 @@
         justify-content: space-between;
         padding: 1rem;
     }
+    .dameraLogo img{
+        width: 80px;
+    }
     .dameraLogo a{
-        font-size: .7rem;
+        font-size: .6rem;
     }
     
     .pages{
