@@ -3,7 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+body{
+    background-image: url(https://global-uploads.webflow.com/60d21862724092349138065e/60d22a662e93a76ff5878b0a_geometry.png);
+    background-size: auto;
+    background-position: 0 0;
+}
 .icon{
     width: 40px;
     padding-top: 5px;
@@ -39,8 +43,11 @@
     
     width: 100%;
     margin-top: 100px;
-    padding: 5rem;
-    border-top: 1px solid  #f7f6f6;
+    padding: 5rem; 
+    background: #fafafa;
+    position: relative;
+    top: 7rem;
+    
    
    
 }

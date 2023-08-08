@@ -51,7 +51,7 @@ mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser: true })
 
 app.post('/users/register', storeUserController)
 app.post('/messages/send', storeMessageController)
-app.get('/posts/new', newPostController)
+app.get('/posts/new', newPostController, validateMiddleware)
 app.get('/', homeController)
 app.get('/portfolio', portfolioController)
 app.get('/blog', blogController)

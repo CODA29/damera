@@ -4,6 +4,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 7rem;
+    
 }
 .blogIntro h2{
     font-weight: 400;
@@ -17,6 +20,9 @@
     margin: auto;
     border-bottom: 1px solid rgb(177, 177, 177);
     margin-top: 5rem;
+    position: relative;
+    top: 7rem;
+    
     
     
 }
@@ -35,6 +41,9 @@
     margin-top: 3rem;
     margin-bottom: 10rem;
     gap: 3rem;
+    position: relative;
+    top: 5rem;
+    
    
   
 }
@@ -46,7 +55,7 @@
     
 }
 .post-preview{
-    
+    background: #fafafa;
     width: 400px;
     display: flex;
     flex-direction: column;

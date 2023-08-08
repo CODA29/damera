@@ -7,6 +7,10 @@
     margin: auto;
     border-radius: .5rem;
     box-shadow: 0px 10px 15px rgba(160, 153, 153, 0.498);
+    background: #fafafa;
+    position: relative;
+    top: 7rem;
+    
 }
 .item1{
     padding: 2rem;
@@ -22,6 +26,10 @@
     width: 500px;
     margin: auto;
     margin-top: 10rem;
+    margin-bottom: 7rem;
+    position: relative;
+    top: 7rem;
+    
 }
 .createPostHead h1{
     font-weight: 400;
@@ -38,6 +46,8 @@
 .form{
     width: 500px;
     margin: auto;
+   
+    
 
 }
 .formHead h1{
@@ -78,6 +88,7 @@ label{
     padding: 1rem;
    
 }
+
 .postBody{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 17px;

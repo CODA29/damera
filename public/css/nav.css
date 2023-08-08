@@ -5,7 +5,10 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 2rem;
-    border-bottom: 1px solid  #f7f6f6;
+    position: fixed;
+    background: #fafafa;
+    top: 0;
+    z-index: 1;
     
 }
 .dameraLogo{
@@ -62,6 +65,9 @@
     width: 100%;
     background: #454545;
     display: none;
+    position: relative;
+    top: 8rem;
+    
 }   
 .burgerMenu a{
     text-decoration: none;
@@ -80,9 +86,9 @@
 @media screen and (max-width: 900px){
 
     .mainNav{
-        background: unset;
+        
         justify-content: space-between;
-        padding: 1.5rem;
+        padding: 1rem;
     }
     .dameraLogo a{
         font-size: .7rem;
