@@ -2,7 +2,7 @@
 <html lang="en">
      <!--Page head section-->
     <%- include('layouts/header'); -%>
-<body>
+<body id="bodi">
     
     
     <div class="display-header" style="background: url('../img/blog2.WebP') fixed top; background-size: 100vh">
@@ -17,6 +17,11 @@
                    <% } 
                %>
                 
+                
+            </div>
+            <div class="night">
+                <p id="modeLabel"></p>
+                <button id="modeBtn"> <i class="fa-solid fa-sun" style="color: #faa44e"></i> </button>
             </div>
             
         </div>
@@ -31,7 +36,7 @@
     
     <div class="post-body">
         <div>
-            <p><%- blogpost.body %></p>
+            <p id = "bodyText"><%- blogpost.body %></p>
         </div>
         
     </div>
