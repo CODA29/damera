@@ -8,20 +8,23 @@
     <div class="display-header" style="background: url('../img/blog2.WebP') fixed top; background-size: 100vh">
         <div class="nav">
             <div class="link">
-                <a href="/blog" aria-label="Home button"> < BACK </a>
+                <a href="/blog" aria-label="Home button"> < Back </a>
                 
             </div>
             <div class="link">
                 <% if(loggedIn) { %> 
-                    <a href="/auth/logout"> LOG OUT </a>
+                    <a href="/auth/logout"> Log Out </a>
                    <% } 
                %>
                 
                 
             </div>
+
+
             <div class="night">
-                <p id="modeLabel"></p>
+               
                 <button id="modeBtn"> <i class="fa-solid fa-sun" style="color: #faa44e"></i> </button>
+                <p id="modeLabel"></p>
             </div>
             
         </div>
@@ -44,7 +47,7 @@
     <div class="comment">
 
         <% if (blogpost.comments.length > 0) { %>
-            <h3>Comments</h3>
+            <h3>Comments <i class="fa-regular fa-comment-dots" style="color:'black'"></i></h3>
             <ul>
                 <% blogpost.comments.forEach(comment => { %>
                     <li>
@@ -64,9 +67,9 @@
         %>
 
         <% if (loggedIn) { %>
-            <h3>Add a Comment:</h3>
+            <h3>Add a Comment</h3>
             <form method="POST" action="/posts/comment/<%= blogpost._id %>" class="commentForm">
-                <textarea name="comment" placeholder="Write your comment here..."></textarea> <br>
+                <textarea name="comment" id="commentBox" placeholder="Write your comment here..."></textarea> <br>
                 <button type="submit">SUBMIT</button>
             </form>
         <% } else { %>
@@ -75,7 +78,7 @@
         %>
     </div>
    
-    <div class="spacer2"> 
+    <div class="spacer2" id="foot"> 
 
         <!--Page footer-->
         <%- include('layouts/footer'); -%>
