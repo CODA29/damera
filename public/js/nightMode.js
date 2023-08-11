@@ -30,22 +30,19 @@ modeBtn.addEventListener('click', function(){
         modeLabel.textContent = 'Light'
         modeBtn.innerHTML = '<i class="fa-solid fa-sun" style="color: #faa44e;"></i>';
         body.style.background ='#454545'
-        footer.style.background ='#454545'
-        commentBox.style.background ='#454545'
-        commentBox.style.borderColor ='white'
-        commentBox.style.color ='white'
         body.style.color ='white'
+        footer.style.background ='#454545'
+        
+        
        
     }
     else{
         modeLabel.textContent = 'Dark'
         modeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        body.style.backgroundImage =''
-        body.style.color =''
-        footer.style.background =''
-        commentBox.style.background ='none'
-        commentBox.style.borderColor =''
-        commentBox.style.color =''
+        body.style.backgroundImage ='url(https://global-uploads.webflow.com/60d21862724092349138065e/60d22a662e93a76ff5878b0a_geometry.png)'
+        body.style.color ='#454545'
+        footer.style.background ='#fafafa;'
+        
         
     }
     
