@@ -70,7 +70,7 @@
             <h3>Add a Comment</h3>
             <form method="POST" action="/posts/comment/<%= blogpost._id %>" class="commentForm">
                 <textarea name="comment" id="commentBox" placeholder="Write your comment here..."></textarea> <br>
-                <button type="submit">SUBMIT</button>
+                <button type="submit">Submit</button>
             </form>
         <% } else { %>
             <p>Please <a href="/auth/login">log in</a> to leave a comment.</p>
