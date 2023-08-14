@@ -23,19 +23,17 @@
     width: 100px;
    
 }
-.dameraLogo a{
+.creatives{
    
     font-weight: 500;
     cursor: pointer;
-    font-size: .9rem;
+    font-size: 1.1rem;
     color:  #454545;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
 }
-.dameraLogo .creatives{
-    color:  #454545;
-}
+
 .pages{
     
     display: flex;
@@ -46,7 +44,7 @@
 .pages a{
     
     cursor: pointer;
-    font-size: .9rem;
+    font-size: 1rem;
     color: #454545;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -91,14 +89,15 @@
     .mainNav{
         
         justify-content: space-between;
-        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         border-bottom: unset;
     }
     .dameraLogo img{
         width: 80px;
     }
-    .dameraLogo a{
-        font-size: .6rem;
+    .creatives{
+        display: none;
     }
     
     .pages{
