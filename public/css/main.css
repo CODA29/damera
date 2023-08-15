@@ -104,8 +104,8 @@ body{
     background: none;
     position: fixed;
     bottom: 30px;
-    left: 1rem;
-    font-size: .6rem;
+    right: 1rem;
+    font-size: .5rem;
     cursor: pointer;
     z-index: 2;
 }
