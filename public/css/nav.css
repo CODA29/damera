@@ -9,6 +9,7 @@
     background: var(--navbackground);
     top: 0;
     z-index: 1;
+    transition: 1s;
     
 }
 .dameraLogo{
