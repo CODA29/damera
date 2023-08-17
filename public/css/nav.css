@@ -50,24 +50,8 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
 }
-.night{
-display: flex;
-align-items: center;
-gap: .7rem;
-flex-wrap: nowrap;
-}
-.night p{
-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-font-size: .9rem;
-color: var(--headclr); 
-}
-.night button{
-background: none;
-border: none;
-font-size: 1.3rem;
-cursor: pointer;
 
-}
+
 
 .burger{
     display: none;
@@ -107,8 +91,8 @@ cursor: pointer;
     .mainNav{
         
         justify-content: space-between;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         border-bottom: unset;
     }
     .dameraLogo img{
@@ -118,7 +102,7 @@ cursor: pointer;
         display: none;
     }
     
-    .pages, .night p{
+    .pages{
         display: none;
     }
     

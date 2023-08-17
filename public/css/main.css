@@ -80,23 +80,23 @@ body{
     top: 7rem;
   
 }
-.night2{
-    display: none;
-    
+.night{
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: .7rem;
     flex-wrap: nowrap;
+    margin-bottom: 2rem;
 }
-.night2 p{
+.night p{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 1.1rem;
-    color: var(--color);
+    font-size: .9rem;
+    color: var(--headclr); 
 }
-.night2 button{
+.night button{
     background: none;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     
 }
