@@ -10,7 +10,7 @@ modeBtn.addEventListener('click', () => {
 
   } else {
     localStorage.setItem('color-scheme', 'light');
-    modeBtn.innerHTML = '<i class="fa-solid fa-circle-half-stroke" style="color: black"></i>';
+    modeBtn.innerHTML = '<i class="fa-solid fa-circle-half-stroke" style="color: var(--color)"></i>';
     modeLabel.textContent = "Dark Mode"
   }
 });
