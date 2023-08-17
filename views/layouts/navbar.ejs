@@ -19,11 +19,18 @@
             <% if(!loggedIn) { %>
             <!-- <li> <a href="/auth/register"> Join </a></li> -->
             <a href="/auth/login"> Login </a>
+           
                 
                 
             <% } %>
 
         </div>
+        
+        <div class="night">
+            <button id="modeBtn"> <i class="fa-solid fa-circle-half-stroke fa-rotate-180" style="color: #faa44e"></i></button>
+            <p id="modeLabel">Light Mode</p>
+        </div>
+        
         <div class="burger">
             <div class="icon">
                 <i class="fa fa-bars" id="i"></i>
@@ -47,6 +54,7 @@
              <a href="/auth/login"> Login </a> 
             
             <% } %>
+            
     </div>
 
     

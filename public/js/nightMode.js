@@ -1,5 +1,34 @@
 const modeBtn = document.getElementById('modeBtn');
 const modeLabel = document.getElementById('modeLabel');
+
+modeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    localStorage.setItem('color-scheme', 'dark');
+    modeBtn.innerHTML = '<i class="fa-solid fa-circle-half-stroke" style="color: white"></i>';
+    modeLabel.textContent = "Dark Mode";
+
+  } else {
+    localStorage.setItem('color-scheme', 'light');
+    modeBtn.innerHTML = '<i class="fa-solid fa-circle-half-stroke fa-rotate-180" style="color: #faa44e"></i>';
+    modeLabel.textContent = "Light Mode"
+  }
+});
+
+const userPreference = localStorage.getItem('color-scheme');
+if (userPreference === 'dark') {
+  document.body.classList.add('dark-mode');
+  modeBtn.innerHTML = '<i class="fa-solid fa-circle-half-stroke" style="color: white"></i>';
+  modeLabel.textContent = "Dark Mode"
+}
+
+
+
+
+
+
+
+/*const modeLabel = document.getElementById('modeLabel');
 const body = document.body;
 const bodyText = document.getElementById('bodyText');
 const footer = document.querySelector('#foot');
@@ -23,6 +52,8 @@ const modeDescription ={
 
 modeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
 modeLabel.textContent = 'Dark'
+body.style.backgroundImage ='url(https://global-uploads.webflow.com/60d21862724092349138065e/60d22a662e93a76ff5878b0a_geometry.png)'
+       
 
 modeBtn.addEventListener('click', function(){
 
@@ -40,14 +71,11 @@ modeBtn.addEventListener('click', function(){
         modeLabel.textContent = 'Dark'
         modeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
         body.style.backgroundImage ='url(https://global-uploads.webflow.com/60d21862724092349138065e/60d22a662e93a76ff5878b0a_geometry.png)'
-        body.style.color ='#454545'
-        footer.style.background ='#fafafa;'
+        body.style.color ='black'
+        footer.style.background ='#fafafa'
         
         
     }
-    
-
-
-
-    
+ 
 })
+*/
