@@ -93,12 +93,8 @@ label{
     border: var(--border);
    
 }
-textarea{
-    color: var(--color);
-    background: var(--navbackground);
-    border: var(--border);
-   
-}
+.note-editable { background-color: var(--navbackground); color: var(--color);  border: var(--border); }
+
 .postBody{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 17px;
