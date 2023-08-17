@@ -1,3 +1,13 @@
+
+body{
+    background: var(--background);
+    color: var(--color);
+    background-size: auto;
+    background-position: 0 0;
+   
+    
+   
+}
 .messageContainer{
     width: 100vw;
     height: 100vh;
@@ -11,12 +21,32 @@
     font-weight: 400;
     font-size: 2.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var( --headclr);
 }
 .messageContainer p{
     font-size: 1.05rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #454545;
+    color: var(--color);
     margin-top: 2rem;
+}
+
+.contribute{
+    
+   
+    display: flex;
+    margin-top: 3rem;
+   
+}
+.contribute a{
+    
+    background: var(--fabcolor);
+    color: var(--btntextcolor);
+    text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    padding: 1rem;
+    border-radius: 5px;
+    
 }
 
 @media screen and (max-width: 750px) {
