@@ -80,6 +80,7 @@ body{
     position: relative;
     top: 7rem;
     transition: 1s;
+    
 }
 .night{
     display: flex;
