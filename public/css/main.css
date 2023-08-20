@@ -14,10 +14,11 @@
     --btntextcolor: white;
     --copyrightcolor: #8f8f8f;
     --border: .2px solid #8f8f8f;
+    --box-shadow: 0px 0px 15px rgba(152, 152, 152, 0.4);
    
 }
 .dark-mode{
-    --background: #2b2b2b;
+    --background: #232323;
     --color: white;
     --headclr: white;
     --navbackground: #2b2b2b;

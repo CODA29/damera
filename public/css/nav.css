@@ -61,6 +61,7 @@
     color: var(--fabcolor);
     font-size: 1.7em;   
     cursor: pointer;
+    
 }
 .burgerMenu{
     width: 100%;
@@ -70,7 +71,6 @@
     position: fixed;
     z-index: 1;
     top: 7rem;
-   
     
 }   
 .burgerMenu a{
@@ -95,6 +95,8 @@
         padding-left: 1rem;
         padding-right: 1rem;
         border-bottom: unset;
+        
+        
     }
     .dameraLogo img{
         width: 80px;
@@ -109,6 +111,7 @@
     
     .burger{
         display: block;
+        
 
     }
     

@@ -153,6 +153,9 @@
   padding: 0.5rem;
   width: 100%;
   border-radius: 0.5rem;
+  color: var(--color);
+  background: var(--navbackground);
+  border: var(--border);
 }
 .commentForm button {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
