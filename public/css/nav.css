@@ -10,6 +10,7 @@
     top: 0;
     z-index: 1;
     transition: 1s;
+   
     
 }
 .dameraLogo{
@@ -26,9 +27,9 @@
 }
 .creatives{
    
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--fabcolor);
     text-decoration: none;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -43,9 +44,9 @@
 
 }
 .pages a{
-    
+   
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--headclr);
     text-decoration: none;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
