@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 7rem;
+    top: 12rem;
     
 }
 .blogIntro h2{
@@ -16,21 +16,20 @@
     
 }
 .recentHeader{
-    max-width: 1300px;
+    max-width: 600px;
     margin: auto;
-    border-bottom: 1px solid rgb(177, 177, 177);
+    border-bottom: .5px solid rgb(177, 177, 177);
     margin-bottom: 4rem;
     margin-top: 7rem;
     position: relative;
-    top: 7rem;
-    
-    
-    
+    top: 10rem;
 }
 .recentHeader h3{
-    font-weight: 400;
+    font-weight: 200;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--color);
+    padding-bottom: 1rem;
+    text-align: center;
 }
 /* Controller for the Literature page */
 .post-container{
@@ -43,7 +42,7 @@
     margin-bottom: 10rem;
     gap: 3rem;
     position: relative;
-    top: 5rem;
+    top: 9rem;
     
    
   

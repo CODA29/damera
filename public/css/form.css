@@ -9,7 +9,7 @@
     border: var(--border);
     background: var(--navbackground);
     position: relative;
-    top: 7rem;
+    top: 8.5rem;
     
 }
 .item1{
@@ -152,12 +152,12 @@ label{
         flex-direction: column-reverse;
         background: unset;
         gap: 2rem;
-        width: 350px;
+        
     }
     .createPostHead{
-        width: 350px;
+        width: 400px;
         padding: 1rem;
-        margin-top: 3rem;
+        margin-top: 7rem;
     }
     .createPostHead h1{
         font-size: 1.5rem;
@@ -166,7 +166,7 @@ label{
         font-size: 1rem;
     }
     .item1{
-        width: 350px;
+        width: 400px;
         padding: 1rem;
         margin: auto;
     }
