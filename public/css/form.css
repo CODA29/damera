@@ -157,7 +157,8 @@ label{
     .createPostHead{
         width: 400px;
         padding: 1rem;
-        margin-top: 7rem;
+        margin-top: 5rem;
+
     }
     .createPostHead h1{
         font-size: 1.5rem;
