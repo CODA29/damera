@@ -1,9 +1,9 @@
 .formWrapper{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 810px;
     margin: auto;
     border-radius: .5rem;
     border: var(--border);
@@ -16,8 +16,7 @@
     padding: 2rem;
 }
 .item2 img{
-    width: 600px;
-    
+    width: 450px;  
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
   
@@ -45,11 +44,8 @@
     color: var(--color);
 }
 .form{
-    width: 500px;
-    margin: auto;
+    width: 300px
    
-    
-
 }
 .formHead h1{
     
