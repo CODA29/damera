@@ -1,7 +1,8 @@
 # damera_creatives
-A blog website. 
 
-Designed for writers to share their ideas.
+Note: As the website is hosted on a free-tier hosting deal, it will take a minute for the server to spin up and load the landing page. Be Patient😊                                                                                 
+
+A blog website designed for writers to share their ideas.
 
 New users must register to gain access to share their posts.
 
