@@ -14,7 +14,7 @@ Writers are expected to provide these three pieces of information:
 
             - Title of their post
             - Body of their post
-            - finally, upload an accompanying picture to their post
+          
 
 When finished, click the "post" button. Now your new post is visible to other visitors.
 
