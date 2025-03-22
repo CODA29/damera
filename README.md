@@ -1,6 +1,7 @@
 # damera_creatives
 
-Note: As the website is hosted on a free-tier hosting deal, it will take a minute for the server to spin up and load the landing page. Be Patient😊                                                                                 
+Note: As the website is hosted on a free-tier hosting deal, it will take a minute for the server to spin up and load the landing page. 
+Please be Patient 😊                                                                                 
 
 A blog website designed for writers to share their ideas.
 
