@@ -14,7 +14,7 @@ module.exports = (req,res) => {
 
             
             //res.redirect(`/success?message=${encodeURIComponent(successMessage)}`);
-            res.redirect('/sucess')
+            res.redirect('/success')
            
         }
            
