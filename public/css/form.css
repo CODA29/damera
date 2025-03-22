@@ -14,8 +14,9 @@
 }
 .item1{
     padding: 2rem;
-    width: 700px;
+    width: 500px;
     margin: auto;
+    
 }
 .item2 img{
     width: 450px;  
@@ -46,8 +47,7 @@
     color: var(--color);
 }
 .form{
-    width: 300px
-   
+    width: 100%   
 }
 .formHead h1{
     
