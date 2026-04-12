@@ -30,10 +30,6 @@ Damera Creatives is a full stack blog application that allows users to create, p
 
 ---
 
-## 📸 Screenshots
-
-(Add screenshots here)
-
 ---
 
 ## 🔗 Live Demo
